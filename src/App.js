@@ -8,12 +8,14 @@ import SignUpModal from "./components/signUpModal";
 import LandingSection from "./components/landing";
 import Trending from "./components/trending";
 import HowTeeChaWorks from "./components/howTeeChaWorks";
+import TeeCha from "./components/TeeCha";
 
 function App() {
   return (
       <Router>
         <NavBar/>
         <LandingSection/>
+        <TeeCha/>
         <HowTeeChaWorks/>
         <Trending/>
         <SideBar/>
