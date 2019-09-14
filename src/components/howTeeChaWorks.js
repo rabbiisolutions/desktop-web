@@ -1,13 +1,14 @@
 import React from "react";
 import TeeChaStep from "./sub-items/TeeChaStep";
 import TeeChaSteps from "../constants/TeeChaSteps";
+import texts from "../constants/texts";
 
 
 const HowTeeChaWorks = () => {
   return (
-      <div className="">
-        <div className="">How TeeCha Works</div>
-        <div className="">
+      <section className="how-teecha">
+        <div className="how-teecha-title">{texts.howTeeChaWorks}</div>
+        <div className="how-teecha-steps">
           { TeeChaStep(TeeChaSteps[0]) }
 
           { TeeChaStep(TeeChaSteps[1]) }
@@ -16,7 +17,7 @@ const HowTeeChaWorks = () => {
 
           { TeeChaStep(TeeChaSteps[3]) }
         </div>
-      </div>
+      </section>
   );
 };
 

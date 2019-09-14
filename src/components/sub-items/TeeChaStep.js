@@ -7,7 +7,7 @@ const TeeChaStep = (props) =>  {
       <div className="teecha-step">
         <div className="step">Step {props.stepNumber}</div>
         <div className="step-title">&middot; {props.title}</div>
-        <div className="step-icon"><Icon src={props.src} height={5} width={5}/></div>
+        <div className="step-icon"><Icon src={props.src} height={15} width={15}/></div>
         <div className="step-description">{props.description}</div>
       </div>
   );

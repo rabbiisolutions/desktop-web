@@ -1,7 +1,7 @@
-import partnership from "../../icons/teeChaSteps/partnership.svg";
-import placement from "../../icons/teeChaSteps/recruitment.svg";
-import management from "../../icons/teeChaSteps/tasks.svg";
-import joy from "../../icons/teeChaSteps/friendship.svg";
+import partnership from "../icons/teeChaSteps/partnership.svg";
+import placement from "../icons/teeChaSteps/recruitment.svg";
+import management from "../icons/teeChaSteps/tasks.svg";
+import joy from "../icons/teeChaSteps/friendship.svg";
 
 
 const TeeChaSteps = [

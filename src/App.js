@@ -7,12 +7,14 @@ import MobileFooter from "./components/mobile/footer";
 import SignUpModal from "./components/signUpModal";
 import LandingSection from "./components/landing";
 import Trending from "./components/trending";
+import HowTeeChaWorks from "./components/howTeeChaWorks";
 
 function App() {
   return (
       <Router>
         <NavBar/>
         <LandingSection/>
+        <HowTeeChaWorks/>
         <Trending/>
         <SideBar/>
         <SignUpModal/>
