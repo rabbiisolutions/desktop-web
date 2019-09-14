@@ -1,4 +1,4 @@
-import webpIsSupported from "../../helpers/webp";
+import webpIsSupported from "./webp";
 
 const BackGround = () => {
   return webpIsSupported() ? 'webp': 'jpeg';
