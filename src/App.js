@@ -9,6 +9,7 @@ import LandingSection from "./components/landing";
 import Trending from "./components/trending";
 import HowTeeChaWorks from "./components/howTeeChaWorks";
 import TeeCha from "./components/TeeCha";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <LandingSection/>
         <TeeCha/>
         <HowTeeChaWorks/>
+        <Reviews/>
         <Trending/>
         <SideBar/>
         <SignUpModal/>
