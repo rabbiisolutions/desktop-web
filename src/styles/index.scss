@@ -108,10 +108,13 @@ body {
         }
     }
 
-    .landing-webp, .landing-jpeg {
+    .landing-webp, .landing-jpeg, .trending-webp, .trending-jpeg {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .landing-webp, .landing-jpeg {
         color: color(white);
         fill: color(white);
         display: flex;
@@ -143,6 +146,71 @@ body {
 
     .landing-webp {
         background-image: url("../images/webp/landing.webp");
+    }
+
+    .trending-jpeg, .trending-webp {
+
+        .trending-overlay {
+            background: rgba(0, 0, 0, 0.54);
+            padding: 1.9em 1.125em;
+            text-align: center;
+            font-size: .7em;
+            display: flex;
+            flex-wrap: wrap;
+
+            .did-you-know {
+                color: color(aqua);
+            }
+
+            .advert {
+                background: rgba(0, 5, 117, 0.42);
+                padding: 10px;
+                color: color(persimmon);
+                margin: 30px 0;
+            }
+
+            .check-out {
+                color: color(magenta);
+                margin-bottom: 20px;
+            }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+
+            .trends {
+                color: color(white);
+                padding: .3em .7em;
+                font-size: 1.125em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .trend-icon {
+                margin-right: 10px;
+            }
+
+            .facebook {
+                background-color: color(facebook);
+                margin-right: 20px;
+            }
+
+            .twitter {
+                background-color: color(twitter);
+            }
+        }
+    }
+
+    .trending-jpeg {
+        background-image: url("../images/jpeg/trending.jpg");
+    }
+
+    .trending-webp {
+        background-image: url("../images/webp/trending.webp");
     }
 
     .our-services {
