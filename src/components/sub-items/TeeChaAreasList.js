@@ -1,5 +1,5 @@
 import ListItem from "../utils/listItems";
-import teeChaAreas from "./teeChaAreas";
+import teeChaAreas from "../../constants/teeChaAreas";
 
 const academics = ListItem(teeChaAreas.academics);
 const thi = ListItem(teeChaAreas.thi);
