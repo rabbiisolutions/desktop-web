@@ -4,9 +4,9 @@ import Icon from "../utils/icon";
 import toggle from "../../icons/list.svg"
 import Button from "../utils/button";
 import texts from "../../constants/texts";
-import signUpHandler from "../../eventHandlers/signUpModal";
-import menuToggle from "../../eventHandlers/menuToggle";
-import overlayAction from "../../eventHandlers/overlayActions";
+import signUpHandler from "../../events/signUpModal";
+import menuToggle from "../../events/menuToggle";
+import overlayAction from "../../events/overlayActions";
 
 
 class NavBar extends React.Component {
@@ -19,7 +19,6 @@ class NavBar extends React.Component {
   }
 
   servicesToggle(e) {
-    //.classList.toggle('hidden');
       overlayAction(document.getElementsByClassName('our-services')[0]);
   };
 
