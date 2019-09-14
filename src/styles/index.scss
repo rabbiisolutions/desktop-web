@@ -149,14 +149,34 @@ body {
     }
 
     .trending-jpeg, .trending-webp {
+        height: 700px;
+        padding: 4em;
+
+        .trending-title {
+            font-size: 2em;
+            color: color(magenta);
+            display: flex;
+            align-items: center;
+
+            .text {
+                margin-right: 10px;
+            }
+        }
 
         .trending-overlay {
             background: rgba(0, 0, 0, 0.54);
             padding: 1.9em 1.125em;
             text-align: center;
-            font-size: .7em;
+            font-size: 1.2em;
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
+            margin: 4em 2em;
+
+
+            .trending-info, .trending-video {
+                margin: 0 2em;
+            }
 
             .did-you-know {
                 color: color(aqua);
@@ -167,11 +187,12 @@ body {
                 padding: 10px;
                 color: color(persimmon);
                 margin: 30px 0;
+                max-width: 512px;
             }
 
             .check-out {
                 color: color(magenta);
-                margin-bottom: 20px;
+                margin: 50px 0 30px 0;
             }
 
             .social-links {
