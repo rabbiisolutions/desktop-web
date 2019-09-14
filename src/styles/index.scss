@@ -53,12 +53,13 @@ body {
         }
 
         .nav {
+            display: none;
 
             .nav-item {
                 display: inline-block;
                 text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
                 color: color(aqua);
-                padding: 20px 15px;
+                padding: 15px 15px;
                 min-width: fit-content;
                 cursor: $pointer;
                 text-decoration: none;
@@ -105,6 +106,43 @@ body {
             fill: color(robinsEggBlue);
             cursor: $pointer;
         }
+    }
+
+    .landing-webp, .landing-jpeg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: color(white);
+        fill: color(white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+
+
+        .slogan {
+            background: rgba(37, 37, 37, 0.44);
+            padding: 1em 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+
+            .text {
+                font-size: 4em;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .landing-jpeg {
+        background-image: url("../images/jpeg/landing.jpg");
+    }
+
+    .landing-webp {
+        background-image: url("../images/webp/landing.webp");
     }
 
     .our-services {

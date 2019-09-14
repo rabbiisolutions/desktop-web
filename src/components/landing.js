@@ -6,9 +6,9 @@ import texts from "../constants/texts";
 
 function LandingSection() {
   return (
-      <section className={"landing " + BackGround}>
+      <section className={"landing-" + BackGround()}>
         <div className="slogan">
-          <Icon src={bulb} className="" height={6}/>
+          <Icon src={bulb} height={6}/>
           <span className="text">{texts.slogan}&nbsp;</span>
         </div>
       </section>
