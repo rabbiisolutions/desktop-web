@@ -108,7 +108,7 @@ body {
         }
     }
 
-    .landing-webp, .landing-jpeg, .trending-webp, .trending-jpeg, .teecha-jpeg, .teecha-webp {
+    .landing-webp, .landing-jpeg, .trending-webp, .trending-jpeg, .teecha-jpeg, .teecha-webp, .reviews-jpeg, .reviews-webp {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -270,6 +270,18 @@ body {
 
     .teecha-webp {
         background-image: url("../images/webp/teecha.webp");
+    }
+
+    .reviews-jpeg, .reviews-webp {
+
+    }
+
+    .reviews-jpeg {
+        background-image: url("../images/jpeg/reviews.jpg");
+    }
+
+    .reviews-webp {
+        background-image: url("../images/webp/reviews.webp");
     }
 
     .trending-jpeg, .trending-webp {
