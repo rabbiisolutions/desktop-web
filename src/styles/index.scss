@@ -239,7 +239,7 @@ body {
             display: grid;
             grid-template-columns: auto auto auto auto;
             grid-column-gap: 50px;
-            margin: 50px;
+            margin: 50px 0;
 
             .teecha-step {
                 text-align: center;
@@ -301,7 +301,6 @@ body {
                 text-align: center;
                 column-gap: 10px;
                 max-width: 1373px;
-                margin: 0;
 
                 .step {
                     background-color: color(electricVioletDull);
@@ -339,11 +338,11 @@ body {
             }
 
             .be-a-tutor {
-                margin: 0 auto;
+                margin: 0 auto 50px auto;
             }
 
             .get-a-tutor {
-                margin: 0 2em;
+                margin: 0 2em 90px 2em;
             }
         }
     }
@@ -363,7 +362,7 @@ body {
             font-size: 48px;
             text-shadow: 0 4px 30px #000000;
             color: #FFFFFF;
-            margin: .5em 1.5em 2em 1.5em;
+            margin: .5em 1.5em 1em 1.5em;
         }
 
         .reviews {
@@ -372,11 +371,11 @@ body {
             display: grid;
             grid-template-columns: auto auto;
             column-gap: 50px;
-            margin: 30px 90px;
+            row-gap: 70px;
+            margin: 0 90px 30px 90px;
             border-radius: 5px;
 
             .review {
-                margin: 25px 0;
                 .reviewer {
                     color: color(ripePlum);
                     font-weight: bolder;
