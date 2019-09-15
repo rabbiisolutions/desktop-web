@@ -7,7 +7,9 @@ const HowToStep = (props) =>  {
       <div className="how-to-step">
         <div className="step">Step {props.stepNumber}</div>
         <div className="title">&middot; {props.title}</div>
-        <Icon src={props.src} className={props.className} height={15} width={15}/>
+        <div className="icon">
+          <Icon src={props.src} className={props.className} height={15} width={15}/>
+        </div>
         <div className="description">{props.description}</div>
       </div>
   );

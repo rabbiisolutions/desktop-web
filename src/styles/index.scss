@@ -274,7 +274,74 @@ body {
 
     .how-to-jpeg, .how-to-webp {
         .filter {
+            padding: 4em 0;
             background: rgba(0, 0, 0, 0.25);
+
+            .signing-up {
+                font-weight: 600;
+                font-size: 32px;
+                text-decoration-line: underline;
+                color: #4B0057;
+                margin-left: 4em;
+            }
+
+            .get-text, .be-text {
+                color: #0009DA;
+                font-weight: bold;
+                font-size: 24px;
+                margin-left: 230px;
+                margin-top: 50px;
+                margin-bottom: 40px;
+            }
+
+            .get-a-tutor, .be-a-tutor {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto auto;
+                text-align: center;
+                column-gap: 10px;
+                max-width: 1373px;
+                margin: 0;
+
+                .step {
+                    background-color: color(electricVioletDull);
+                    padding: 10px 20px;
+                    margin-bottom: 1.25em;
+                    color: white;
+                    font-weight: bold;
+                }
+                .title {
+                    color: color(blueStone);
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    margin-bottom: 1.125em;
+                }
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .next-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .description {
+                    color: color(mirage);
+                    font-size: 1.2em;
+                    margin-top: 1.125em;
+                }
+            }
+
+            .be-a-tutor {
+                margin: 0 auto;
+            }
+
+            .get-a-tutor {
+                margin: 0 2em;
+            }
         }
     }
 
