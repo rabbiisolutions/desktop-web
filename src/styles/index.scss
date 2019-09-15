@@ -326,6 +326,75 @@ body {
         background-image: url("../images/webp/reviews.webp");
     }
 
+    .featured {
+        padding: 2em 4em;
+        background: linear-gradient(180deg, rgba(0, 182, 194, 0.13) 0%, rgba(0, 0, 0, 0.13) 100%);
+
+        .title {
+            font-size: 36px;
+            color: #0009DA;
+            text-decoration-line: underline;
+            margin: .5em 1.5em 2em 1.5em;
+        }
+
+        .featured-tutors {
+            padding: 2em;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 50px;
+            margin: 30px 60px;
+
+            .featured-tutor {
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .featured-tutor {
+                        color: #9E02B6;
+                        font-weight: 600;
+                        font-size: 22px;
+                        min-width: fit-content;
+                        margin-right: 15px;
+                    }
+                    .tutor-description {
+                        color: color(bluewood);
+                        font-size: 20px;
+                    }
+                }
+                .comment {
+                    color: color(mirage);
+                    margin-top: 30px;
+                    line-height: 25px;
+                }
+                .bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .areas {
+                        background: linear-gradient(180deg, rgba(0, 5, 117, 0.13) 0%, rgba(62, 0, 71, 0.24) 100%);
+                        padding: 10px;
+                        color: color(bluewood);
+                        font-size: .9em;
+                        font-weight: bold;
+                    }
+                    .stars {
+                        margin: 30px 0 15px 40px;
+
+                        .blue span {
+                            color: color(blueStone);
+                        }
+
+                        .s-grey span {
+                            color: color(grey);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .trending-jpeg, .trending-webp {
         height: 700px;
         padding: 4em;
