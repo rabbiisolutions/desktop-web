@@ -310,7 +310,7 @@ body {
                     font-weight: bold;
                 }
                 .title {
-                    color: color(blueStone);
+                    color: #0009DA;
                     font-weight: bold;
                     font-size: 1.5em;
                     margin-bottom: 1.125em;
@@ -320,12 +320,14 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    fill: #000575;
                 }
 
                 .next-icon {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    color: #000575;
                 }
 
                 .description {
