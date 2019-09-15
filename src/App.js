@@ -10,6 +10,7 @@ import Trending from "./components/trending";
 import HowTeeChaWorks from "./components/howTeeChaWorks";
 import TeeCha from "./components/TeeCha";
 import Reviews from "./components/Reviews";
+import FeaturedTutors from "./components/FeaturedTutors";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <TeeCha/>
         <HowTeeChaWorks/>
         <Reviews/>
+        <FeaturedTutors/>
         <Trending/>
         <SideBar/>
         <SignUpModal/>
