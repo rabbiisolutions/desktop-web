@@ -1,7 +1,7 @@
-import register from "../../icons/howTo/application.svg";
-import evaluation from "../../icons/howTo/time.svg";
-import placement from "../../icons/howTo/recruitment.svg";
-import manJoy from "../../icons/howTo/boy-broad-smile.svg";
+import register from "../icons/howTo/application.svg";
+import evaluation from "../icons/howTo/time.svg";
+import placement from "../icons/howTo/recruitment.svg";
+import manJoy from "../icons/howTo/boy-broad-smile.svg";
 
 
 const howToBeATutorSteps = [

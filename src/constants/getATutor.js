@@ -1,8 +1,8 @@
-import register from "../../icons/howTo/application.svg";
-import counselling from "../../icons/howTo/feedback.svg";
-import placement from "../../icons/howTo/recruitment.svg";
-import payment from "../../icons/howTo/online-payment.svg";
-import womanJoy from "../../icons/howTo/smiling-girl.svg";
+import register from "../icons/howTo/application.svg";
+import counselling from "../icons/howTo/feedback.svg";
+import placement from "../icons/howTo/recruitment.svg";
+import payment from "../icons/howTo/online-payment.svg";
+import womanJoy from "../icons/howTo/smiling-girl.svg";
 
 
 const howToGetATutorSteps = [
