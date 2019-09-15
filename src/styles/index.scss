@@ -108,7 +108,7 @@ body {
         }
     }
 
-    .landing-webp, .landing-jpeg, .trending-webp, .trending-jpeg, .teecha-jpeg, .teecha-webp, .reviews-jpeg, .reviews-webp {
+    .landing-webp, .landing-jpeg, .trending-webp, .trending-jpeg, .teecha-jpeg, .teecha-webp, .reviews-jpeg, .reviews-webp, .how-to-jpeg, .how-to-webp {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -146,54 +146,6 @@ body {
 
     .landing-webp {
         background-image: url("../images/webp/landing.webp");
-    }
-
-    .how-teecha {
-        padding: 4em;
-        .how-teecha-title {
-            font-size: 36px;
-            color: #0009E2;
-            text-decoration: underline;
-            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-            margin-left: 50px;
-        }
-
-        .how-teecha-steps {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            grid-column-gap: 50px;
-            margin: 50px;
-
-            .teecha-step {
-                text-align: center;
-
-                .step {
-                    background-color: color(electricVioletDull);
-                    padding: 10px 20px;
-                    margin-bottom: 1.25em;
-                    color: white;
-                    font-weight: bold;
-                }
-                .step-title {
-                    color: color(blueStone);
-                    font-weight: bold;
-                    font-size: 1.5em;
-                    margin-bottom: 1.125em;
-                }
-
-                .step-icon {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .step-description {
-                    color: color(mirage);
-                    font-size: 1.2em;
-                    margin-top: 1.125em;
-                }
-            }
-        }
     }
 
     .teecha-jpeg, .teecha-webp {
@@ -270,6 +222,68 @@ body {
 
     .teecha-webp {
         background-image: url("../images/webp/teecha.webp");
+    }
+
+    .how-teecha {
+        padding: 4em;
+        .how-teecha-title {
+            font-size: 36px;
+            color: #0009E2;
+            text-decoration: underline;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            margin-left: 50px;
+        }
+
+        .how-teecha-steps {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 50px;
+            margin: 50px;
+
+            .teecha-step {
+                text-align: center;
+
+                .step {
+                    background-color: color(electricVioletDull);
+                    padding: 10px 20px;
+                    margin-bottom: 1.25em;
+                    color: white;
+                    font-weight: bold;
+                }
+                .step-title {
+                    color: color(blueStone);
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    margin-bottom: 1.125em;
+                }
+
+                .step-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .step-description {
+                    color: color(mirage);
+                    font-size: 1.2em;
+                    margin-top: 1.125em;
+                }
+            }
+        }
+    }
+
+    .how-to-jpeg, .how-to-webp {
+        .filter {
+            background: rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .how-to-jpeg {
+        background-image: url("../images/jpeg/registration.jpg");
+    }
+
+    .how-to-webp {
+        background-image: url("../images/webp/registration.webp");
     }
 
     .reviews-jpeg, .reviews-webp {
