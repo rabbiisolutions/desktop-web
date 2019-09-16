@@ -289,7 +289,7 @@ body {
 
     .how-to-jpeg, .how-to-webp {
         .filter {
-            padding: 4em 0;
+            padding: 4em 2em;
             background: rgba(0, 0, 0, 0.25);
 
             .signing-up {
@@ -311,9 +311,8 @@ body {
 
             .get-a-tutor, .be-a-tutor {
                 display: grid;
-                grid-template-columns: auto auto auto auto auto auto auto auto auto;
                 text-align: center;
-                column-gap: 10px;
+                column-gap: 70px;
                 max-width: 1373px;
 
                 .step {
@@ -353,10 +352,14 @@ body {
 
             .be-a-tutor {
                 margin: 0 auto 50px auto;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                row-gap: 70px;
             }
 
             .get-a-tutor {
-                margin: 0 2.5em 90px 2.5em;
+                margin: 0 auto 90px auto;
+                grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+                row-gap: 70px;
             }
         }
     }
