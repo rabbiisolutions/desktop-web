@@ -12,11 +12,13 @@ import TeeCha from "./components/TeeCha";
 import Reviews from "./components/Reviews";
 import FeaturedTutors from "./components/FeaturedTutors";
 import SigningUp from "./components/SigningUp";
+import DropDown from "./components/sub-items/DropDown";
 
 function App() {
   return (
       <Router>
         <NavBar/>
+        <DropDown/>
         <LandingSection/>
         <TeeCha/>
         <HowTeeChaWorks/>
