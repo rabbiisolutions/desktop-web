@@ -15,10 +15,17 @@ $navBarHeight: 4.25em;
 $webkitRadius : 10em;
 $borderRadius: 10em;
 $font24: 1em;
-$desktop: 840px;
+$desktop: 800px;
+$monitor: 1192px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin monitor {
+    @media (max-width: #{$monitor}) {
         @content;
     }
 }
@@ -128,6 +135,8 @@ body {
             justify-content: center;
             align-items: center;
             width: fit-content;
+            margin-left: 3rem;
+            margin-right: 3rem;
 
             .text {
                 font-size: 4rem;
@@ -155,11 +164,17 @@ body {
             flex-wrap: wrap;
             font-weight: bold;
 
+            @include monitor {
+                justify-content: center;
+            }
+
             .teecha-caption {
                 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
                 height: fit-content;
+                max-height: 131px;
                 padding: .5em;
                 margin-top: 50px;
+                margin-right: 50px;
 
                 .teecha {
                     font-size: 64px;
@@ -355,13 +370,13 @@ body {
     }
 
     .reviews-jpeg, .reviews-webp {
-        padding: 4em;
+        padding: 4em 0;
 
         .title {
             font-size: 48px;
             text-shadow: 0 4px 30px #000000;
             color: #FFFFFF;
-            margin: .5em 1.5em 1em 1.5em;
+            margin: .5em 0 1em 3em;
         }
 
         .reviews {
@@ -499,14 +514,22 @@ body {
             padding: 1.9em 1.125em;
             text-align: center;
             font-size: 1.2em;
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(512px, 1fr));
             align-items: center;
+            grid-row-gap: 40px;
             margin: 4em 2em;
 
 
             .trending-info, .trending-video {
                 margin: 0 2em;
+            }
+
+            .trending-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             .did-you-know {
