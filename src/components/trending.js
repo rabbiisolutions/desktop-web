@@ -4,10 +4,7 @@ import React from "react";
 import Icon from "./utils/icon";
 import facebook from "../icons/social/facebook-f-brands.svg";
 import twitter from "../icons/social/twitter-brands.svg";
-import webpIsSupported from "../helpers/webp";
 import BackGround from "../helpers/backGround";
-import didYouKnowWebp from "../images/webp/did-you-know.webp";
-import didYouKnowJpeg from "../images/jpeg/did-you-know.jpg";
 import trendIcon from "../icons/stat.svg";
 
 
