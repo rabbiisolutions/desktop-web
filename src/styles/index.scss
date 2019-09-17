@@ -397,6 +397,23 @@ body {
                     color: color(ripePlum);
                     font-weight: bolder;
                     font-size: 1.5em;
+                    display: flex;
+                    align-items: center;
+
+                    .icon-link {
+                        margin-left: 15px;
+                        .facebook {
+                            color: color(facebook);
+                        }
+
+                        .twitter {
+                            color: color(twitter);
+                        }
+
+                        .azure {
+                            fill: color(azure);
+                        }
+                    }
                 }
                 .stars {
                     margin: 15px 0 15px 40px;

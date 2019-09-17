@@ -1,15 +1,24 @@
 import texts from "./texts";
+import mail from "../icons/social/gmail.svg"
+import twitter from "../icons/social/twitter-brands.svg"
+import facebook from "../icons/social/facebook-f-brands.svg"
 
 const clientReviews = [
   {
-    name: 'Mutunga Katola', description: 'Buruburu', key: "1", url: 'mkatola@associate.crcna.org',
+    name: 'Mutunga Katola', description: 'Buruburu', key: "1",
+    social:{
+      url: 'mailto:mkatola@associate.crcna.org', icon: mail, color: 'azure'
+    },
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.grey],
       size: "2", mobileSize: "1"
     }, comment: 'I’m grateful for the good tutoring work you are doing. (Parent)'
   },
   {
-    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "2",  url: 'https://www.facebook.com/mutai.sharo',
+    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "2",
+    social:{
+      url: 'https://www.facebook.com/mutai.sharo', icon: facebook, color: 'facebook'
+    },
     stars: {
       shade:[texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise],
       size: "2", mobileSize: "1"
@@ -19,7 +28,10 @@ const clientReviews = [
         ' company for their work.\n'
   },
   {
-    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "3", url: 'https://twitter.com/OkelloOnuko',
+    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "3",
+    social:{
+      url: 'https://twitter.com/OkelloOnuko', icon: twitter, color: 'twitter'
+    },
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.grey],
       size: "2", mobileSize: "1"
@@ -27,7 +39,10 @@ const clientReviews = [
         ' resources and teaching services are provided to learners at the comfort of their homes'
   },
   {
-    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "4", url: 'https://www.facebook.com/john.mwendwa.33',
+    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "4",
+    social:{
+      url: 'https://www.facebook.com/john.mwendwa.33', icon: facebook, color: 'facebook'
+    },
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.grey, texts.grey],
       size: "2", mobileSize: "1"
