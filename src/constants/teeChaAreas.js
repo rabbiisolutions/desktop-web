@@ -2,7 +2,7 @@ const teeChaAreas = {
   academics: [
     {key: '1', text: 'Elementary Level'}, {key: '2', text: 'International Baccalaureate'},
     {key: '3', text: 'A-Levels'}, {key: '4', text: 'Adult Education'}, {key: '5', text: 'IGCSE'},
-    {key: '6', text: 'American Curriculum'}
+    {key: '6', text: 'American Curriculum'}, {key: '7', text: '8-4-4'}
   ],
   thi: [
     {key: '1', text: 'Music'}, {key: '2', text: 'Art'},
