@@ -250,7 +250,7 @@ body {
 
         .how-teecha-steps {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(267px, 1fr));
             grid-column-gap: 50px;
             grid-row-gap: 50px;
             margin: 50px 0;
@@ -313,7 +313,7 @@ body {
                 display: grid;
                 text-align: center;
                 column-gap: 70px;
-                max-width: 1373px;
+                max-width: 1300px;
 
                 .step {
                     background-color: color(electricVioletDull);
@@ -358,7 +358,7 @@ body {
 
             .get-a-tutor {
                 margin: 0 auto 90px auto;
-                grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(201px, 1fr));
                 row-gap: 70px;
             }
         }
