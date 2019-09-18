@@ -282,6 +282,10 @@ body {
                     color: color(mirage);
                     font-size: 1.2em;
                     margin-top: 1.125em;
+                    .dots {
+                        color: color(azure);
+                        cursor: $pointer;
+                    }
                 }
             }
         }
