@@ -6,7 +6,6 @@ import NavBar from "./components/mobile/navBar";
 import MobileFooter from "./components/mobile/footer";
 import SignUpModal from "./components/signUpModal";
 import LandingSection from "./components/landing";
-import Trending from "./components/trending";
 import HowTeeChaWorks from "./components/howTeeChaWorks";
 import TeeCha from "./components/TeeCha";
 import Reviews from "./components/Reviews";
@@ -25,7 +24,6 @@ function App() {
         <SigningUp/>
         <Reviews/>
         <FeaturedTutors/>
-        <Trending/>
         <SideBar/>
         <SignUpModal/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
