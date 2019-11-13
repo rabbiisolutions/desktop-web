@@ -15,22 +15,21 @@ const TeeCha = () => {
           <div className="home-tuition-areas">{texts.homeTuitionAreas}</div>
           <div className="teecha-areas">
             <div className="col-1">
-              <div className="category">{texts.academics}</div>
+              <div className="category">Academic Tuition</div>
               {teeChaAreasLists.academics}
-              <div className="category">{texts.thi}</div>
-              {teeChaAreasLists.thi}
-              <div className="category">{texts.technology}</div>
-              {teeChaAreasLists.technology}
             </div>
             <div className="col-2">
-              <div className="category">{texts.languages}</div>
-              {teeChaAreasLists.languages}
-              <div className="category">{texts.counselling}</div>
-              {teeChaAreasLists.counselling}
-              <div className="category">{texts.sports}</div>
-              {teeChaAreasLists.sports}
-              <div className="category">{texts.university}</div>
-              {teeChaAreasLists.university}
+              <div className="category">Skills Tuition</div>
+              <div className="skills">
+                <div className="fl">
+                  <div className="category">Foreign Languages</div>
+                  {teeChaAreasLists.fl}
+                </div>
+                <div className="gs">
+                  <div className="category">Games & Sports</div>
+                  {teeChaAreasLists.gs}
+                </div>
+              </div>
             </div>
           </div>
           <div className="teecha-info">

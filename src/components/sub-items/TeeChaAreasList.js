@@ -2,16 +2,11 @@ import ListItem from "../utils/listItems";
 import teeChaAreas from "../../constants/teeChaAreas";
 
 const academics = ListItem(teeChaAreas.academics);
-const thi = ListItem(teeChaAreas.thi);
-const technology = ListItem(teeChaAreas.technology);
-const languages = ListItem(teeChaAreas.languages);
-const counselling = ListItem(teeChaAreas.counselling);
-const sports = ListItem(teeChaAreas.sports);
-const university = ListItem(teeChaAreas.university);
+const fl = ListItem(teeChaAreas.fl);
+const gs = ListItem(teeChaAreas.gs);
 
 const teeChaAreasLists = {
-  academics: academics, thi: thi, technology: technology, languages: languages,
-  counselling: counselling, sports: sports, university: university
+  academics: academics, fl: fl, gs: gs
 };
 
 export default teeChaAreasLists;
