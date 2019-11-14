@@ -12,7 +12,8 @@ const TeeCha = () => {
           <div className="teecha">{texts.teeCha}</div>
           <div className="home-tuition">{texts.homeTuition}</div>
         </div>
-        <div className="teecha-box">
+        <div className="boxes">
+          <div className="teecha-box">
           <div className="home-tuition-areas">{texts.homeTuitionAreas}</div>
           <div className="teecha-areas">
             <div className="col-1">
@@ -23,11 +24,11 @@ const TeeCha = () => {
               <div className="category">Skills Tuition</div>
               <div className="skills">
                 <div className="fl">
-                  <div className="category">Foreign Languages</div>
+                  <div className="sub-category">Foreign Languages</div>
                   {teeChaAreasLists.fl}
                 </div>
                 <div className="gs">
-                  <div className="category">Games & Sports</div>
+                  <div className="sub-category">Games & Sports</div>
                   {teeChaAreasLists.gs}
                 </div>
               </div>
@@ -37,7 +38,8 @@ const TeeCha = () => {
             {texts.homeTuitionInfo}
           </div>
         </div>
-        <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List"/>
+          <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List"/>
+        </div>
       </div>
     </section>
   );

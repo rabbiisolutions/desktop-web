@@ -18,6 +18,7 @@ const SignUpModal = (props) => {
           <ButtonLink link="https://forms.gle/ZU8GZrYVPWenL4r19" className="tutors-btn" value="TSC Tutor"/>
           <ButtonLink link="https://forms.gle/CmgUyZCWrnLgsqnC9" className="tutors-btn" value="Skills Tutor"/>
         </div>
+        <div className="msg">If you face difficulty in registering call, text or whatsapp on 0772 915 361</div>
       </div>
   );
 };
