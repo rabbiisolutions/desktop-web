@@ -12,6 +12,7 @@ import Reviews from "./components/Reviews";
 import FeaturedTutors from "./components/FeaturedTutors";
 import SigningUp from "./components/SigningUp";
 import DropDown from "./components/sub-items/DropDown";
+import texts from "./constants/texts";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Reviews/>
         <FeaturedTutors/>
         <SideBar/>
-        <SignUpModal/>
+        <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp}/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
         <MobileFooter/>
       </Router>

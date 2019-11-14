@@ -2,6 +2,7 @@ import React from "react";
 import texts from "../constants/texts";
 import teeChaAreasLists from "./sub-items/TeeChaAreasList";
 import BackGround from "../helpers/backGround";
+import SignUpModal from "./signUpModal";
 
 const TeeCha = () => {
   return (
@@ -36,6 +37,7 @@ const TeeCha = () => {
             {texts.homeTuitionInfo}
           </div>
         </div>
+        <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List"/>
       </div>
     </section>
   );
