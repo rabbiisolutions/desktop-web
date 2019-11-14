@@ -69,7 +69,7 @@ const MobileFooter = () => {
         </div>
         <div id="darken">
           <span className="copyright">&copy;&nbsp;{new Date().getFullYear()}&nbsp;Copyright:&nbsp;</span>
-          <span className="company">&nbsp;Rabbii&nbsp;Technology&nbsp;Solutions&nbsp;®&nbsp;</span>
+          <h1 className="company">&nbsp;Rabbii&nbsp;Technology&nbsp;Solutions&nbsp;®&nbsp;</h1>
         </div>
       </footer>
   );
