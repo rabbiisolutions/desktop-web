@@ -38,7 +38,7 @@ const TeeCha = () => {
             {texts.homeTuitionInfo}
           </div>
         </div>
-          <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List"/>
+          <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List" status="hidden"/>
         </div>
       </div>
     </section>

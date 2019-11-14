@@ -5,7 +5,7 @@ import signUpHandler from "../events/signUpModal";
 const SignUpModal = (props) => {
   return (
       <div className={props.className}>
-        <div className="close-icon" onClick={e => signUpHandler(e)}>&#10006;</div>
+        <div className={"close-icon " + props.status} onClick={e => signUpHandler(e)}>&#10006;</div>
         <div className="sign-up-text">{props.signUpText}</div>
         <div className="user-title">Clients/Parents</div>
         <div id="client-btns">
