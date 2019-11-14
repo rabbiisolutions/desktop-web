@@ -934,7 +934,13 @@ body {
         border-color: color(magenta);
     }
 
-    #client-btns, #tutor-btns {
+    #client-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tutor-btns {
         display: flex;
         flex-direction: row;
         align-items: center;
