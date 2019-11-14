@@ -9,8 +9,8 @@ const SigningUp = () => {
   return (
     <section className={"how-to-" + BackGround()}>
       <div className="filter">
-        <div className="signing-up">{texts.signUpHow}</div>
-        <div className="get-text">1.&nbsp;{texts.getATutor}</div>
+        <h1 className="signing-up">{texts.signUpHow}</h1>
+        <h2 className="get-text">1.&nbsp;{texts.getATutor}</h2>
         <div className="get-a-tutor">
           {HowToStep(howToGetATutorSteps[0])}
           {HowToStep(howToGetATutorSteps[1])}
@@ -18,7 +18,7 @@ const SigningUp = () => {
           {HowToStep(howToGetATutorSteps[3])}
           {HowToStep(howToGetATutorSteps[4])}
         </div>
-        <div className="be-text">2.&nbsp;{texts.beATutor}</div>
+        <h2 className="be-text">2.&nbsp;{texts.beATutor}</h2>
         <div className="be-a-tutor">
           {HowToStep(howToBeATutorSteps[0])}
           {HowToStep(howToBeATutorSteps[1])}

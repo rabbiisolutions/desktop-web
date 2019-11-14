@@ -8,10 +8,10 @@ const TeeCha = () => {
   return (
     <section className={"teecha-" + BackGround()}>
       <div id="teecha">
-        <div className="teecha-caption">
+        <h2 className="teecha-caption">
           <div className="teecha">{texts.teeCha}</div>
           <div className="home-tuition">{texts.homeTuition}</div>
-        </div>
+        </h2>
         <div className="boxes">
           <div className="teecha-box">
           <div className="home-tuition-areas">{texts.homeTuitionAreas}</div>

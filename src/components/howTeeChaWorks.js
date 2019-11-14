@@ -7,7 +7,7 @@ import texts from "../constants/texts";
 const HowTeeChaWorks = () => {
   return (
       <section className="how-teecha">
-        <div className="how-teecha-title">{texts.howTeeChaWorks}</div>
+        <h2 className="how-teecha-title">{texts.howTeeChaWorks}</h2>
         <div className="how-teecha-steps">
           { TeeChaStep(TeeChaSteps[0]) }
 

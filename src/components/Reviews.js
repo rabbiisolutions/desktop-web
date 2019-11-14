@@ -7,7 +7,7 @@ import texts from "../constants/texts";
 const Reviews = () => {
   return (
       <section className={"reviews-" + BackGround()}>
-        <div className="title">{texts.reviews}</div>
+        <h1 className="title">{texts.reviews}</h1>
         <div className="reviews">
           {Review(clientReviews[0])}
           {Review(clientReviews[1])}
