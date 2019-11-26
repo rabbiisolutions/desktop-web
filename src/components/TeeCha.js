@@ -3,6 +3,7 @@ import texts from "../constants/texts";
 import teeChaAreasLists from "./sub-items/TeeChaAreasList";
 import BackGround from "../helpers/backGround";
 import SignUpModal from "./signUpModal";
+import ButtonLink from "./utils/ButtonLink";
 
 const TeeCha = () => {
   return (
@@ -33,6 +34,9 @@ const TeeCha = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div id={'tuition-jobs'}>
+            <ButtonLink link="https://tuition-jobs.rabbii.co.ke" className="clients-btn" value="View Available Tuition Jobs"/>
           </div>
           <div className="teecha-info">
             {texts.homeTuitionInfo}

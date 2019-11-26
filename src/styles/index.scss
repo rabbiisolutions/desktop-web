@@ -3,7 +3,8 @@ $colors: (
         magenta: #DC00FE, mirage: #1B2531, dullMirage: rgba(27, 37, 49, 0.8), scorpion: #625E5D,
         bluewood: #263246, vividViolet: #9F34AF, purple: #740186, grey: #CBC6C6, darkGrey: #A8A8A8,
         bondiBlue: #00AEAE, blueStone: #006A6A, clairvoyant: #36043E, ripePlum: #5B0069,
-        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3, robinsEggBlue: #01d3d3, azure: #0009D5
+        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3, robinsEggBlue: #01d3d3, azure: #0009D5,
+        denim: #147CAC
 );
 
 @function color($name) {
@@ -235,6 +236,11 @@ body {
                             color: color(white);
                             line-height: 1.5em;
                         }
+                    }
+
+                    #tuition-jobs {
+                        display: flex;
+                        justify-content: center;
                     }
 
                     .teecha-info {
@@ -914,27 +920,6 @@ body {
         margin: 10px 20px;
     }
 
-    .clients-btn, .tutors-btn {
-        padding: .5em 1.5em;
-        display: inline-block;
-        box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
-        margin: 0 10px 15px 10px;
-        border: 0.2em solid;
-    }
-
-    .clients-btn {
-        background-color: color(magenta);
-        color: color(white);
-        border-color: color(mirage);
-        font-weight: bold;
-    }
-
-    .tutors-btn {
-        background-color: color(mirage);
-        color: color(magenta);
-        border-color: color(magenta);
-    }
-
     #client-btns {
         display: flex;
         justify-content: center;
@@ -962,4 +947,14 @@ body {
     cursor: $pointer;
     box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
     text-decoration: none;
+}
+
+.clients-btn, .tutors-btn {
+    padding: .5em 1.5em;
+    display: inline-block;
+    box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
+    margin: 0 10px 15px 10px;
+    border: 0.2em solid color(magenta);
+    background-color: color(mirage);
+    color: color(magenta);
 }
