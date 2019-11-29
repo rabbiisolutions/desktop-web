@@ -10,6 +10,7 @@ const SignUpModal = (props) => {
         <div className="user-title">Clients/Parents</div>
         <div id="client-btns">
           <ButtonLink link="https://forms.gle/y7KTkMDtYCtAywDu6" className="clients-btn" value="Get a Tutor"/>
+          <ButtonLink link="https://forms.gle/3zg3FSExEBdBPHd39" className="clients-btn" value="Referral"/>
         </div>
         <hr className="sign-up-divider"/>
         <div className="user-title">Tutors</div>
