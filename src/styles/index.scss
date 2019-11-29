@@ -66,6 +66,7 @@ body {
                 min-width: fit-content;
                 cursor: $pointer;
                 text-decoration: none;
+                line-height: 70%;
             }
 
             .nav-item:hover {
@@ -320,6 +321,7 @@ body {
 
         }
     }
+
     .circle-widget {
         .circle-icon {
             width: 162px;
@@ -340,91 +342,6 @@ body {
             max-width: 150px;
 
         }
-    }
-
-    .how-to-jpeg, .how-to-webp {
-        .filter {
-            padding: 4em 2em;
-            background: rgba(0, 0, 0, 0.25);
-
-            .signing-up {
-                font-weight: 600;
-                font-size: 32px;
-                text-decoration-line: underline;
-                color: #4B0057;
-                margin-left: 4em;
-            }
-
-            .get-text, .be-text {
-                color: #0009DA;
-                font-weight: bold;
-                font-size: 24px;
-                margin-left: 230px;
-                margin-top: 50px;
-                margin-bottom: 40px;
-            }
-
-            .get-a-tutor, .be-a-tutor {
-                display: grid;
-                text-align: center;
-                column-gap: 70px;
-                max-width: 1300px;
-
-                .step {
-                    background-color: color(electricVioletDull);
-                    padding: 10px 20px;
-                    margin-bottom: 1.25em;
-                    color: white;
-                    font-weight: bold;
-                }
-                .title {
-                    color: #0009DA;
-                    font-weight: bold;
-                    font-size: 1.5em;
-                    margin-bottom: 1.125em;
-                }
-
-                .icon {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    fill: #000575;
-                }
-
-                .next-icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: #000575;
-                }
-
-                .description {
-                    color: color(mirage);
-                    font-size: 1.2em;
-                    margin-top: 1.125em;
-                }
-            }
-
-            .be-a-tutor {
-                margin: 0 auto 50px auto;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                row-gap: 70px;
-            }
-
-            .get-a-tutor {
-                margin: 0 auto 90px auto;
-                grid-template-columns: repeat(auto-fill, minmax(201px, 1fr));
-                row-gap: 70px;
-            }
-        }
-    }
-
-    .how-to-jpeg {
-        background-image: url("../images/jpeg/registration.jpg");
-    }
-
-    .how-to-webp {
-        background-image: url("../images/webp/registration.webp");
     }
 
     .reviews-jpeg, .reviews-webp {
@@ -722,7 +639,7 @@ body {
                 }
             }
 
-            #contacts-title, #find-us-title {
+            #contacts-title, #find-us-title, #links-title {
                 color: color(white);
                 text-align: center;
                 font-size: 1.125em;
@@ -740,6 +657,15 @@ body {
                     order: 2;
                     margin-left: 10em;
                 }
+            }
+
+            #links {
+                margin-left: 140px;
+            }
+
+            .links a {
+                text-decoration: none;
+                color: color(robinsEggBlue);
             }
 
             #contacts {

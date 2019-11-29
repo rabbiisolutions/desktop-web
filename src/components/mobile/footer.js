@@ -65,7 +65,13 @@ const MobileFooter = () => {
                 <Icon src={linkedin} className="footer-icon" height={2.5} width={2.5}/>
               </a>
             </div>
-</div>
+          </div>
+          <div id={'links'}>
+            <div id="links-title">Links</div>
+            <div className={'links'}>
+              <a href={'https://policy.rabbii.co.ke'}>Privacy Policy</a>
+            </div>
+          </div>
         </div>
         <div id="darken">
           <span className="copyright">&copy;&nbsp;{new Date().getFullYear()}&nbsp;Copyright:&nbsp;</span>
