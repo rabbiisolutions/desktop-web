@@ -417,7 +417,7 @@ body {
 
     .featured {
         padding: 2em 4em;
-        background: linear-gradient(180deg, rgba(0, 182, 194, 0.13) 0%, rgba(0, 0, 0, 0.13) 100%);
+        background: white;
 
         .title {
             font-size: 36px;
@@ -483,101 +483,6 @@ body {
                 }
             }
         }
-    }
-
-    .trending-jpeg, .trending-webp {
-        min-height: 700px;
-        padding: 4em;
-
-        .trending-title {
-            font-size: 2em;
-            color: color(magenta);
-            display: flex;
-            align-items: center;
-            margin-left: 50px;
-
-            .text {
-                margin-right: 10px;
-            }
-        }
-
-        .trending-overlay {
-            background: rgba(0, 0, 0, 0.54);
-            padding: 1.9em 1.125em;
-            text-align: center;
-            font-size: 1.2em;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(512px, 1fr));
-            align-items: center;
-            grid-row-gap: 40px;
-            margin: 4em 2em;
-
-
-            .trending-info, .trending-video {
-                margin: 0 2em;
-            }
-
-            .trending-info {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .did-you-know {
-                color: color(aqua);
-            }
-
-            .advert {
-                background: rgba(0, 5, 117, 0.42);
-                padding: 10px;
-                color: color(persimmon);
-                margin: 30px 0;
-                max-width: 512px;
-            }
-
-            .check-out {
-                color: color(magenta);
-                margin: 50px 0 30px 0;
-            }
-
-            .social-links {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 40px;
-            }
-
-            .trends {
-                color: color(white);
-                padding: .5em .9em;
-                font-size: 1.125em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .trend-icon {
-                margin-right: 10px;
-            }
-
-            .facebook {
-                background-color: color(facebook);
-                margin-right: 20px;
-            }
-
-            .twitter {
-                background-color: color(twitter);
-            }
-        }
-    }
-
-    .trending-jpeg {
-        background-image: url("../images/jpeg/trending.jpg");
-    }
-
-    .trending-webp {
-        background-image: url("../images/webp/trending.webp");
     }
 
     .our-services {
@@ -881,6 +786,7 @@ body {
         font-size: 1em;
         color: color(white);
         margin: 20px 0 20px 20px;
+        text-transform: capitalize;
 
         @include desktop {
             margin: 20px 0 20px 50px;
