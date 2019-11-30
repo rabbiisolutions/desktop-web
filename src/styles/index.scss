@@ -242,6 +242,12 @@ body {
                     #tuition-jobs {
                         display: flex;
                         justify-content: center;
+
+                        .clients-btn {
+                            border: 0.2em solid color(magenta);
+                            background-color: color(mirage);
+                            color: color(magenta);
+                        }
                     }
 
                     .teecha-info {
@@ -733,7 +739,7 @@ body {
 }
 
 .sign-up.modal {
-    background-color: color(bluewood);
+    background-color: white;
     z-index: 1000;
     width: 90%;
     position: fixed;
@@ -741,8 +747,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: calc(100% - 100px);
-    padding: 20px 0;
+    padding: 20px;
     border-radius: 5px;
+
+    section {
+        border: 1px solid #147CAC;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .close-icon {
+        color: color(dullMirage);
+    }
+
+    hr {
+        display: none;
+    }
 
     @include desktop {
         max-width: 593px;
@@ -750,10 +770,25 @@ body {
 
     .sign-up-text {
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        color: color(darkGrey);
-        text-decoration: underline;
+        color: color(mirage);
         font-size: 1.5em;
         text-align: center;
+        font-weight: bold;
+    }
+
+    .user-title {
+        color: #075174;
+        font-weight: bold;
+    }
+
+    .msg {
+        color: color(mirage);
+    }
+
+    .clients-btn, .tutors-btn {
+        border: 0.2em solid color(mirage);
+        background-color: #0093D7;
+        color: color(mirage);
     }
 }
 
@@ -761,7 +796,6 @@ body {
     background: rgba(3, 3, 3, 0.79);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     padding: 1.5em 3.5em;
-    //margin-top: 50px;
     border-radius: 5px;
 
     .sign-up-text {
@@ -769,6 +803,12 @@ body {
         text-decoration: underline;
         text-align: center;
         font-size: 20px;
+    }
+
+    .clients-btn, .tutors-btn {
+        border: 0.2em solid color(magenta);
+        background-color: color(mirage);
+        color: color(magenta);
     }
 }
 
@@ -832,7 +872,5 @@ body {
     display: inline-block;
     box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
     margin: 0 10px 15px 10px;
-    border: 0.2em solid color(magenta);
-    background-color: color(mirage);
-    color: color(magenta);
+    font-weight: bold;
 }
