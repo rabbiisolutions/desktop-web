@@ -40,9 +40,9 @@ class NavBar extends React.Component {
             <a className="nav-item active" href="#" onClick={e => this.menuHandler(e)}>
               {texts.menuItems[0]}
             </a>
-            <span className="nav-item" onClick={e => this.servicesToggle(e)}>
+            <a className="nav-item" href="https://catalogue.rabbii.co.ke/">
               {texts.menuItems[1]}
-            </span>
+            </a>
             <a className="nav-item" href="https://about.rabbii.co.ke/">
               {texts.menuItems[2]}
             </a>

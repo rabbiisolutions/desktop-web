@@ -36,12 +36,15 @@ const TeeCha = () => {
             </div>
           </div>
           <div id={'tuition-jobs'}>
-            <ButtonLink link="https://tuition-jobs.rabbii.co.ke" className="clients-btn" value="View Available Tuition Jobs"/>
+            <ButtonLink link="https://catalogue.rabbii.co.ke" className="clients-btn" value="Learn more about Our Services"/>
           </div>
           <div className="teecha-info">
             {texts.homeTuitionInfo}
           </div>
         </div>
+          <div id={'catalogue'}>
+            <ButtonLink link="https://tuition-jobs.rabbii.co.ke" className="clients-btn" value="View Available Tuition Jobs"/>
+          </div>
           <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List" status="hidden"/>
         </div>
       </div>

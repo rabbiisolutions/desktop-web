@@ -191,7 +191,7 @@ body {
 
             .boxes {
                 display: grid;
-                grid-template-rows: auto auto;
+                grid-template-rows: auto auto auto;
                 row-gap: 20px;
 
                 .teecha-box {
@@ -239,21 +239,21 @@ body {
                         }
                     }
 
-                    #tuition-jobs {
-                        display: flex;
-                        justify-content: center;
-
-                        .clients-btn {
-                            border: 0.2em solid color(magenta);
-                            background-color: color(mirage);
-                            color: color(magenta);
-                        }
-                    }
-
                     .teecha-info {
                         color: color(white);
                         font-size: .8em;
                         text-align: center;
+                    }
+                }
+
+                #tuition-jobs, #catalogue {
+                    display: flex;
+                    justify-content: center;
+
+                    .clients-btn {
+                        border: 0.2em solid color(magenta);
+                        background-color: color(mirage);
+                        color: color(magenta);
                     }
                 }
             }
@@ -344,7 +344,6 @@ body {
         }
         .text {
             text-align: center;
-            //align-items: center;
             max-width: 150px;
 
         }
