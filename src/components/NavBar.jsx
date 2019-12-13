@@ -30,32 +30,33 @@ class NavBar extends React.Component {
     }
     target.classList.toggle('active');
     this.setState({active: target});
+    target.childNodes[1].classList.toggle('hidden'); // shows the active bar
   }
 
   render() {
     return (
       <nav id="nav-bar">
-        <Logo className="logo" height={2.5}/>
+        <Logo className="logo" height={3} units={'rem'}/>
         <span className="nav">
             <a className="nav-item active" href="#landing-image" onClick={e => this.menuHandler(e)}>
                 <span className={'text'}>{texts.menuItems[0]}</span>
-              <span className={'active'}/>
+              <span className={'active'}>&nbsp;</span>
             </a>
             <a className="nav-item" href="https://catalogue.rabbii.co.ke/">
                 <span className={'text'}>{texts.menuItems[1]}</span>
-              <span className={'active'}/>
+              <span className={'active hidden'}>&nbsp;</span>
             </a>
             <a className="nav-item" href="https://tuition-jobs.rabbii.co.ke/">
                 <span className={'text'}>{texts.menuItems[2]}</span>
-              <span className={'active'}/>
+              <span className={'active hidden'}>&nbsp;</span>
             </a>
             <a className="nav-item"  href="https://about.rabbii.co.ke/">
                 <span className={'text'}>{texts.menuItems[3]}</span>
-              <span className={'active'}/>
+              <span className={'active hidden'}>&nbsp;</span>
             </a>
             <a className="nav-item" href="https://trending.rabbii.co.ke/">
                 <span className={'text'}>{texts.menuItems[4]}</span>
-              <span className={'active'}/>
+              <span className={'active hidden'}>&nbsp;</span>
             </a>
         </span>
         <Button value={texts.signUp} onClick={e => signUpHandler(e)}/>

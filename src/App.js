@@ -16,11 +16,13 @@ function App() {
   return (
       <Router>
         <NavBar/>
-        <Landing/>
-        <TeeCha/>
-        <HowTeeChaWorks/>
-        <Reviews/>
-        <FeaturedTutors/>
+        <main>
+          <Landing/>
+          <TeeCha/>
+          <HowTeeChaWorks/>
+          <Reviews/>
+          <FeaturedTutors/>
+        </main>
         <SideBar/>
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp}/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
