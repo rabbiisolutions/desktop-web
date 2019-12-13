@@ -1,19 +1,19 @@
 import React from "react";
 import texts from "../constants/texts";
 import CircleWidget from "./sub-items/CircleWidget";
-import signup from "../icons/howTo/application.svg"
-import proInfo from "../icons/teeChaSteps/resume.svg"
-import studInfo from "../icons/teeChaSteps/resume (1).svg"
-import screen from "../icons/howTo/time.svg"
-import gets from "../icons/teeChaSteps/deal.svg"
-import verification from "../icons/teeChaSteps/verified-account.svg"
-import placement from "../icons/howTo/recruitment.svg"
-import start from "../icons/teeChaSteps/start-line.svg"
-import evaluation from "../icons/teeChaSteps/evaluation.svg"
-import counselling from "../icons/teeChaSteps/mentor.svg"
-import right from "../icons/teeChaSteps/fa-solid_long-arrow-alt-downarrow-right.svg"
-import left from "../icons/teeChaSteps/fa-solid_long-arrow-alt-downarrow-left.svg"
-import dotted from "../icons/teeChaSteps/Arrow 22dotted-down.svg"
+import signup from "../icons/howTeeChaWorks/application.svg"
+import proInfo from "../icons/howTeeChaWorks/resume.svg"
+import studInfo from "../icons/howTeeChaWorks/resume (1).svg"
+import screen from "../icons/howTeeChaWorks/time.svg"
+import gets from "../icons/howTeeChaWorks/deal.svg"
+import verification from "../icons/howTeeChaWorks/verified-account.svg"
+import placement from "../icons/howTeeChaWorks/recruitment.svg"
+import start from "../icons/howTeeChaWorks/start-line.svg"
+import evaluation from "../icons/howTeeChaWorks/evaluation.svg"
+import counselling from "../icons/howTeeChaWorks/mentor.svg"
+import right from "../icons/howTeeChaWorks/fa-solid_long-arrow-alt-downarrow-right.svg"
+import left from "../icons/howTeeChaWorks/fa-solid_long-arrow-alt-downarrow-left.svg"
+import dotted from "../icons/howTeeChaWorks/Arrow 22dotted-down.svg"
 import Icon from "./utils/icon";
 import DownArrow from "./utils/DownArrow";
 

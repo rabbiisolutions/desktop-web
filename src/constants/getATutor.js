@@ -1,6 +1,6 @@
-import register from "../icons/howTo/application.svg";
+import register from "../icons/howTeeChaWorks/application.svg";
 import counselling from "../icons/howTo/evaluation.svg";
-import placement from "../icons/howTo/recruitment.svg";
+import placement from "../icons/howTeeChaWorks/recruitment.svg";
 import payment from "../icons/howTo/online-payment.svg";
 import womanJoy from "../icons/howTo/smiling-girl.svg";
 
