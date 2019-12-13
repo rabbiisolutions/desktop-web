@@ -68,7 +68,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    ///align-items: center;
 
     .logo {
         display: inline-block; // can't apply max width without inline-block or block
@@ -163,4 +162,46 @@ body {
 
 .hidden {
     display: none;
+}
+
+main {
+    margin-top: $navBarHeight;
+    padding-top: .5rem;
+    display: block;
+}
+
+header {
+    .landing-image {
+        max-width: 96%;
+        height: auto;
+        margin: 0 2.5vw 2vw;
+    }
+
+    #slogan {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1vw 0 2vw 0;
+        padding: 0 10px;
+
+        .idea {
+            display: inline-block;
+        }
+
+        .idea span svg{
+            fill: color(curiosBlue);
+        }
+
+        .idea span svg:hover {
+            transform: scale(1.1);
+        }
+
+        .text {
+            margin-left: 2vw;
+            color: color(curiosBlue);
+            font-size: 4.5vw;
+            font-weight: bold;
+        }
+    }
 }
