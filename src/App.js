@@ -1,24 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import backDropHandler from "./events/BackDrop";
-import SideBar from "./components/mobile/sideBar";
-import NavBar from "./components/mobile/navBar";
-import MobileFooter from "./components/mobile/footer";
-import SignUpModal from "./components/signUpModal";
-import LandingSection from "./components/landing";
-import HowTeeChaWorks from "./components/howTeeChaWorks";
+import SideBar from "./components/SideBar";
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer";
+import SignUpModal from "./components/SignUpModal";
+import Landing from "./components/Landing";
 import TeeCha from "./components/TeeCha";
+import HowTeeChaWorks from "./components/HowTeeChaWorks";
 import Reviews from "./components/Reviews";
 import FeaturedTutors from "./components/FeaturedTutors";
-import DropDown from "./components/sub-items/DropDown";
 import texts from "./constants/Texts";
 
 function App() {
   return (
       <Router>
         <NavBar/>
-        <DropDown/>
-        <LandingSection/>
+        <Landing/>
         <TeeCha/>
         <HowTeeChaWorks/>
         <Reviews/>
@@ -26,7 +24,7 @@ function App() {
         <SideBar/>
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp}/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
-        <MobileFooter/>
+        <Footer/>
       </Router>
   );
 }

@@ -1,14 +1,12 @@
 import React from "react";
 import texts from "../constants/Texts";
-import teeChaAreasLists from "./sub-items/TeeChaAreasList";
-import BackGround from "../helpers/backGround";
-import SignUpModal from "./signUpModal";
-import ButtonLink from "./utils/ButtonLink";
+import teeChaAreasLists from "./composite/TeeChaAreasList";
+import SignUpModal from "./SignUpModal";
+import ButtonLink from "./basic/ButtonLink.jsx";
 
 const TeeCha = () => {
   return (
-    <section className={"teecha-" + BackGround()}>
-      <div id="teecha">
+    <section id={"teecha"}>
         <h2 className="teecha-caption">
           <div className="teecha">{texts.teeCha}</div>
           <div className="home-tuition">{texts.homeTuition}</div>
@@ -45,9 +43,8 @@ const TeeCha = () => {
           <div id={'catalogue'}>
             <ButtonLink link="https://tuition-jobs.rabbii.co.ke" className="clients-btn" value="View Available Tuition Jobs"/>
           </div>
-          <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List" status="hidden"/>
+          <SignUpModal className="sign-up box" signUpText="Sign Up to Receive Our Price List" status="hidden"/>
         </div>
-      </div>
     </section>
   );
 };

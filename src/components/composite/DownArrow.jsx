@@ -1,5 +1,5 @@
 import down from "../../icons/howTeeChaWorks/fa-solid_long-arrow-alt-downdown-solid.svg";
-import Icon from "./icon";
+import Icon from "../basic/Icon";
 import React from "react";
 
 

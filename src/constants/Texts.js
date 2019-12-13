@@ -1,6 +1,6 @@
 const slogan = 'We Believe Knowledge is Power';
 const teeCha = 'TeeCha';
-const homeTuition = 'Home Tuition';
+const homeTuition = '* Free Home Tuition';
 const homeTuitionAreas = 'Home Tuition Areas';
 const academics = 'Academics';
 const homeTuitionInfo = '(You can access home tuition in Nairobi County and other counties Kenya)';

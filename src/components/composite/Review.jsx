@@ -1,6 +1,6 @@
 import React from "react";
-import renderStars from "../utils/stars";
-import Icon from "../utils/icon";
+import renderStars from "./Stars";
+import Icon from "../basic/Icon";
 
 const Review = (props) => {
   return (

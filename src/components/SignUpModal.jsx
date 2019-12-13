@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonLink from "./utils/ButtonLink";
+import ButtonLink from "./basic/ButtonLink.jsx";
 import signUpHandler from "../events/SignUpModal";
 
 const SignUpModal = (props) => {
@@ -16,7 +16,6 @@ const SignUpModal = (props) => {
             <ButtonLink link="https://forms.gle/3zg3FSExEBdBPHd39" className="clients-btn" value="Referral"/>
           </div>
         </section>
-        <hr className="sign-up-divider"/>
         <section>
           <div className="user-title">
             Register to be a Tutor/Teacher in your specific category

@@ -1,4 +1,4 @@
-import Star from "./star";
+import Star from "./Star";
 
 function renderStars(stars) {
   let num = parseInt(stars.key);
