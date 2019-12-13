@@ -2,7 +2,7 @@ import React from "react";
 import BackGround from "../helpers/backGround";
 import Icon from "./utils/icon";
 import bulb from "../icons/idea.svg"
-import texts from "../constants/texts";
+import texts from "../constants/Texts";
 
 function LandingSection() {
   return (

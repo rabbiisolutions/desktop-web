@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import backDropHandler from "./events/backDrop";
+import backDropHandler from "./events/BackDrop";
 import SideBar from "./components/mobile/sideBar";
 import NavBar from "./components/mobile/navBar";
 import MobileFooter from "./components/mobile/footer";
@@ -11,7 +11,7 @@ import TeeCha from "./components/TeeCha";
 import Reviews from "./components/Reviews";
 import FeaturedTutors from "./components/FeaturedTutors";
 import DropDown from "./components/sub-items/DropDown";
-import texts from "./constants/texts";
+import texts from "./constants/Texts";
 
 function App() {
   return (

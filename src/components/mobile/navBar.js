@@ -3,10 +3,10 @@ import Logo from "../utils/logo";
 import Icon from "../utils/icon";
 import toggle from "../../icons/list.svg"
 import Button from "../utils/button";
-import texts from "../../constants/texts";
-import signUpHandler from "../../events/signUpModal";
-import menuToggle from "../../events/menuToggle";
-import overlayAction from "../../events/overlayActions";
+import texts from "../../constants/Texts";
+import signUpHandler from "../../events/SignUpModal";
+import menuToggle from "../../events/MenuToggle";
+import overlayAction from "../../events/OverlayActions";
 
 
 class NavBar extends React.Component {

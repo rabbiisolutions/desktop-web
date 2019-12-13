@@ -7,7 +7,7 @@ import twitter from "../../icons/social/twitter-brands.svg"
 import youtube from "../../icons/social/youtube-brands.svg"
 import facebook from "../../icons/social/facebook-f-brands.svg"
 import linkedin from "../../icons/social/linkedin-in-brands.svg"
-import texts from "../../constants/texts";
+import texts from "../../constants/Texts";
 import Logo from "../utils/logo";
 
 

@@ -1,4 +1,4 @@
-import overlayActions from "./overlayActions";
+import overlayActions from "./OverlayActions";
 
 const dropDownHandler = e => {
     const target = e.target.parentNode;

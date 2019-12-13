@@ -1,5 +1,5 @@
-import texts from "../../constants/texts";
-import dropDownHandler from "../../events/dropDown";
+import texts from "../../constants/Texts";
+import dropDownHandler from "../../events/DropDown";
 import React from "react";
 
 const DropDown = () => {

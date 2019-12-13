@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonLink from "./utils/ButtonLink";
-import signUpHandler from "../events/signUpModal";
+import signUpHandler from "../events/SignUpModal";
 
 const SignUpModal = (props) => {
   return (

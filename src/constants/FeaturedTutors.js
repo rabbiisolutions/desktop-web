@@ -1,8 +1,8 @@
-import texts from "./texts";
+import texts from "./Texts";
 
 const featuredTutors = [
   {
-    name: 'Miss Mutai Sharon', description: 'Masters Student, Mentor, 2 years of experience', key: "1",
+    name: 'Miss Mutai Sharon', description: 'Masters Student, Mentor, 2 years of experience', key: "a1",
     stars: {
       shade: [texts.black, texts.black, texts.black, texts.black, texts.grey], key: 114
     }, comment: 'I am a passionate mathematics and physics teacher.I am currently a masters student ' +
@@ -15,7 +15,7 @@ const featuredTutors = [
   },
   {
     name: 'Mr. Calvins Okello', description: '6 years of experience, National Examiner, IT' +
-        ' Educationist', key: "2",
+        ' Educationist', key: "a2",
     stars: {
       shade: [texts.black, texts.black, texts.black, texts.black, texts.grey], key: 122
     }, comment: 'I am a passionate teacher of physics and mathematics with extra qualifications' +
@@ -25,13 +25,13 @@ const featuredTutors = [
     areas: 'Physics, Mathematics ', url: 'https://twitter.com/OkelloOnuko',
   },
   {
-    name: 'Brian Chege', description: 'Sofapaka FC coach', key: "3",
+    name: 'Brian Chege', description: 'Sofapaka FC coach', key: "a3",
     stars: {
       shade: [texts.black, texts.black, texts.black, texts.grey, texts.grey], key: 133
     }, comment: texts.fakeComment, areas: 'Football'
   },
   {
-    name: 'Oruko Pius', description: 'Music producer, Songwriter', key: "4",
+    name: 'Oruko Pius', description: 'Music producer, Songwriter', key: "a4",
     stars: {
       shade: [texts.black, texts.black, texts.black, texts.black, texts.black], key: 144
     }, comment: texts.fakeComment, areas: 'Vocals, Piano, Lead Guitar'

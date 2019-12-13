@@ -1,4 +1,4 @@
-import overlayAction from "./overlayActions";
+import overlayAction from "./OverlayActions";
 
 const signUpHandler = evt => {
   const signUpModal = document.getElementsByClassName('sign-up modal')[0];

@@ -1,5 +1,5 @@
 import React from "react";
-import texts from "../constants/texts";
+import texts from "../constants/Texts";
 import teeChaAreasLists from "./sub-items/TeeChaAreasList";
 import BackGround from "../helpers/backGround";
 import SignUpModal from "./signUpModal";

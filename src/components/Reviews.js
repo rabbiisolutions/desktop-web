@@ -1,8 +1,8 @@
-import clientReviews from "../constants/reviews";
+import clientReviews from "../constants/Reviews";
 import Review from "./sub-items/Review";
 import React from "react";
 import BackGround from "../helpers/backGround";
-import texts from "../constants/texts";
+import texts from "../constants/Texts";
 
 const Reviews = () => {
   return (

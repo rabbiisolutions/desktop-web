@@ -1,13 +1,10 @@
-import texts from "./texts";
-import mail from "../icons/social/gmail.svg"
-import twitter from "../icons/social/twitter-brands.svg"
-import facebook from "../icons/social/facebook-f-brands.svg"
+import texts from "./Texts";
 
 const clientReviews = [
   {
-    name: 'Mutunga Katola', description: 'Buruburu', key: "1",
+    name: 'Mutunga Katola', description: 'Buruburu', key: "b1",
     social:{
-      url: 'mailto:mkatola@associate.crcna.org', icon: mail, color: 'azure'
+      url: 'mailto:mkatola@associate.crcna.org'
     },
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.grey],
@@ -15,9 +12,9 @@ const clientReviews = [
     }, comment: 'I’m grateful for the good tutoring work you are doing. (Parent)'
   },
   {
-    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "2",
+    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "b2",
     social:{
-      url: 'https://www.facebook.com/mutai.sharo', icon: facebook, color: 'facebook'
+      url: 'https://www.facebook.com/mutai.sharo'
     },
     stars: {
       shade:[texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise],
@@ -28,9 +25,9 @@ const clientReviews = [
         ' company for their work.\n'
   },
   {
-    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "3",
+    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "b3",
     social:{
-      url: 'https://twitter.com/OkelloOnuko', icon: twitter, color: 'twitter'
+      url: 'https://twitter.com/OkelloOnuko'
     },
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.grey],
@@ -39,9 +36,9 @@ const clientReviews = [
         ' resources and teaching services are provided to learners at the comfort of their homes'
   },
   {
-    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "4",
+    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "b4",
     social:{
-      url: 'https://www.facebook.com/john.mwendwa.33', icon: facebook, color: 'facebook'
+      url: 'https://www.facebook.com/john.mwendwa.33'
     },
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.grey, texts.grey],

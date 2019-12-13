@@ -1,6 +1,6 @@
 import FeaturedTutor from "./sub-items/FeaturedTutor";
-import featuredTutors from "../constants/featuredTutors";
-import texts from "../constants/texts";
+import featuredTutors from "../constants/FeaturedTutors";
+import texts from "../constants/Texts";
 import React from "react";
 
 

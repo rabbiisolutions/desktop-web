@@ -1,5 +1,5 @@
 import React from "react";
-import texts from "../constants/texts";
+import texts from "../constants/Texts";
 import CircleWidget from "./sub-items/CircleWidget";
 import signup from "../icons/howTeeChaWorks/application.svg"
 import proInfo from "../icons/howTeeChaWorks/resume.svg"
