@@ -59,6 +59,12 @@ body {
 
 a {
     text-decoration: none;
+    color: color(mirage);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: color(curiosBlue);
 }
 
 .btn-link {
@@ -247,6 +253,10 @@ header {
     }
 }
 
+.section {
+    margin-bottom: 12vw;
+}
+
 #teecha {
     margin-top: 8vw;
 
@@ -378,6 +388,7 @@ header {
         text-align: center;
         font-weight: bold;
         margin: 1vw 0;
+        font-size: 1.25vw;
     }
 
     .user-title {
@@ -410,8 +421,15 @@ header {
     }
 }
 
-.how-teecha-works {
-    padding: 3vw 2vw;
+#canvas {
+    background-color: color(concrete);
+    border-radius: 5px;
+    margin: 0 12%;
+    padding: 2vw;
+}
+
+#how-teecha-works {
+    padding: 0 2vw;
     font-weight: 300;
     font-size: 1.2vw;
     color: color(mirage);
@@ -463,11 +481,11 @@ header {
     }
 
     .titles {
-        padding: 0 15vw 0;
+        //padding: 0 15vw 0;
     }
 
     .start-arrow {
-        padding: 0 15vw 0;
+        //padding: 0 15vw 0;
     }
 
     .user-title {
@@ -499,7 +517,6 @@ header {
 .section-title {
     font-size: 2.25vw;
     color: color(curiosBlue);
-    //-webkit-text-stroke: 1px color(mirage);
     font-weight: bold;
     text-align: center;
 }
@@ -517,7 +534,8 @@ header {
 }
 
 #featured {
-    margin: 0 9%;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
 #featured-row {
@@ -539,7 +557,7 @@ header {
 .featured-tutor, .review {
     padding: 1.5vw 2vw;
 
-    .tutor-name, .reviewer {
+    .tutor-name, .reviewer-name {
         font-weight: 600;
         font-size: 1.25vw;
     }
@@ -572,19 +590,26 @@ header {
     }
 }
 
-.featured-tutor {
-    .tutor-description {
-        color: color(mirage74);
-        max-width: 50%;
-        text-align: right;
-        font-size: 1.0125vw;
-        font-weight: 600;
-    }
+.tutor-description, .reviewer-desc {
+    color: color(mirage74);
+    max-width: 50%;
+    text-align: right;
+    font-size: 1.0125vw;
+    font-weight: 600;
+}
 
-    .tutor-name {
-        display: block;
-        white-space: nowrap;
-    }
+.tutor-name, .reviewer-name {
+    display: block;
+    white-space: nowrap;
+}
+
+.bottom, .top, .reviewer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-tutor {
 
     .areas {
         background: color(mercury);
@@ -598,12 +623,6 @@ header {
     .areas:hover {
         transform: scale(1.1);
     }
-
-    .bottom, .top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     .top {
         margin-bottom: 1vw;
     }
@@ -611,4 +630,66 @@ header {
 
 .featured-tutor:nth-child(1) {
     margin-bottom: 2vw;
+}
+
+footer {
+    #lighter {
+        background-color: color(alto);
+        display: flex;
+        justify-content: center;
+        padding: 2vw 3vw;
+
+        #contacts-title, #find-us-title {
+            color: color(mirage64);
+            text-align: center;
+            font-size: 1.5vw;
+            margin: 1vw 0 1vw;
+            font-weight: 300;
+        }
+
+        .col {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        #contact-list {
+            display: flex;
+            flex-direction: column;
+        }
+        .icon-text {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .footer-icon {
+            margin-right: 10px;
+        }
+    }
+
+    #darken {
+        background: color(nobel);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1vw;
+        font-weight: 300;
+
+        a {
+            font-size: 1.125vw;
+            margin-right: 25px;
+        }
+
+        .copyright {
+            color: color(mirage64);
+            font-size: 1.125vw;
+            font-weight: 300;
+        }
+    }
 }

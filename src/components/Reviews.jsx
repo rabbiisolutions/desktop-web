@@ -8,7 +8,7 @@ import ImageWebp from "../helpers/ImageWebp";
 
 const Reviews = () => {
   return (
-      <section id={"reviews"}>
+      <section id={"reviews"} className={'section'}>
         <ImageWebp
             src={reviewsJ}
             srcWebp={reviewsW}

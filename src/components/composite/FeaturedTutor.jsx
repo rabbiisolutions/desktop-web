@@ -15,7 +15,7 @@ const FeaturedTutor = (props) => {
   return (
       <div className="featured-tutor" key={props.key}>
         <div className="top">
-          <span className="tutor-name">{props.name}</span>
+          <a className="tutor-name" href={props.url} target="_blank" rel="noopener noreferrer">{props.name}</a>
           <span className="tutor-description">({props.description})</span>
         </div>
         <div className="comment">

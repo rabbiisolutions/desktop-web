@@ -9,7 +9,7 @@ import ImageWebp from "../helpers/ImageWebp";
 
 const TeeCha = () => {
   return (
-    <section id={"teecha"}>
+    <section id={"teecha"} className={'section'}>
       <h2 id="teecha-caption">
         <div id="teecha-title">{texts.teeCha}</div>
         <a id="caption" href={'https://catalogue.rabbii.co.ke'}>{texts.homeTuition}</a>

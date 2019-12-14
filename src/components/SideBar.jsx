@@ -58,6 +58,9 @@ class SideBar extends React.Component {
               <a className="menu-item" href="https://trending.rabbii.co.ke/">
                 {texts.menuItems[4]}
               </a>
+              <a className="menu-item" href="https://faqs.rabbii.co.ke/">
+                {texts.menuItems[5]}
+              </a>
             </div>
           </div>
         </nav>

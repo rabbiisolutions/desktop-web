@@ -58,6 +58,10 @@ class NavBar extends React.Component {
                 <span className={'text'}>{texts.menuItems[4]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>
+            <a className="nav-item" href="https://faqs.rabbii.co.ke/">
+                <span className={'text'}>{texts.menuItems[5]}</span>
+              <span className={'active hidden'}>&nbsp;</span>
+            </a>
         </span>
         <Button value={texts.signUp} onClick={e => signUpHandler(e)}/>
         <Icon src={toggle} className="toggle" height={2.25} width={5} onClick={e => menuToggle(e)}/>
