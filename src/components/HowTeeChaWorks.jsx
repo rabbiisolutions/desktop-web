@@ -1,31 +1,33 @@
 import CircleWidget from "./composite/CircleWidget.jsx";
-import signup from "../icons/howTeeChaWorks/application.svg"
-import proInfo from "../icons/howTeeChaWorks/resume.svg"
-import studInfo from "../icons/howTeeChaWorks/resume (1).svg"
-import screen from "../icons/howTeeChaWorks/time.svg"
-import gets from "../icons/howTeeChaWorks/deal.svg"
-import verification from "../icons/howTeeChaWorks/verified-account.svg"
-import placement from "../icons/howTeeChaWorks/recruitment.svg"
-import start from "../icons/howTeeChaWorks/start-line.svg"
-import evaluation from "../icons/howTeeChaWorks/evaluation.svg"
-import counselling from "../icons/howTeeChaWorks/mentor.svg"
-import plane1 from "../icons/howTeeChaWorks/Line 9plane.svg"
-import plane2 from "../icons/howTeeChaWorks/paper-plane 1plane.svg"
-import plane3 from "../icons/howTeeChaWorks/Line 8plane.svg"
-import pen1 from "../icons/howTeeChaWorks/Line 10pen.svg"
-import pen2 from "../icons/howTeeChaWorks/Vectorpen.svg"
-import pen3 from "../icons/howTeeChaWorks/Arrow 29pen.svg"
-import dotted from "../icons/howTeeChaWorks/Arrow 22dotted-down.svg"
-import tutorStart from "../icons/howTeeChaWorks/Arrow 28start-tutor.svg"
-import clientStart from "../icons/howTeeChaWorks/Arrow 23start-client.svg"
+import signup from "../icons/howTeeChaWorks/circle/sign-up.svg"
+import proInfo from "../icons/howTeeChaWorks/circle/give-pro-info.svg"
+import studInfo from "../icons/howTeeChaWorks/circle/student-client-info.svg"
+import screen from "../icons/howTeeChaWorks/circle/screen-tutor.svg"
+import gets from "../icons/howTeeChaWorks/circle/get-tutor.svg"
+import verification from "../icons/howTeeChaWorks/circle/tutor-verification.svg"
+import placement from "../icons/howTeeChaWorks/circle/tutor-placement.svg"
+import start from "../icons/howTeeChaWorks/circle/begin-session.svg"
+import evaluation from "../icons/howTeeChaWorks/circle/evaluation-management.svg"
+import counselling from "../icons/howTeeChaWorks/circle/mentorship.svg"
+import plane1 from "../icons/howTeeChaWorks/arrows/plane-line-start.svg"
+import plane2 from "../icons/howTeeChaWorks/arrows/paper-plane.svg"
+import plane3 from "../icons/howTeeChaWorks/arrows/plane-line-end.svg"
+import pen1 from "../icons/howTeeChaWorks/arrows/pen-line-end.svg"
+import pen2 from "../icons/howTeeChaWorks/arrows/pen.svg"
+import pen3 from "../icons/howTeeChaWorks/arrows/pen-arrow-start.svg"
+import dotted from "../icons/howTeeChaWorks/arrows/light-dotted-down-long.svg"
+import tutorStart from "../icons/howTeeChaWorks/arrows/tutor-start-arrow.svg"
+import clientStart from "../icons/howTeeChaWorks/arrows/client-start-curved.svg"
 import Icon from "./basic/Icon";
 import DownArrow from "./composite/DownArrow.jsx";
 import FLowLine from "./composite/FlowLine.jsx";
 import React from "react";
+import texts from "../constants/Texts";
 
 const HowTeeChaWorks = () => {
   return (
       <section className={'how-teecha-works'}>
+        <div className={'section-title'}>{texts.howTeeChaWorks}</div>
         <div className={'titles'}>
           <div className={'user-title'}>tutor</div>
           <div className={'user-title'}>client</div>
@@ -50,14 +52,14 @@ const HowTeeChaWorks = () => {
           </section>
           <section className={'mid-col col'}>
             <div id={'plane'}>
-              <Icon src={plane1} width={8} height={5} units={'vw'} className={'start'}/>
-              <Icon src={plane2} width={16} height={5} units={'vw'} className={'mid'}/>
-              <Icon src={plane3} width={8} height={5} units={'vw'} className={'end'}/>
+              <Icon src={plane1} width={8} height={4.5} units={'vw'} className={'start'}/>
+              <Icon src={plane2} width={8} height={3} units={'vw'} className={'mid'}/>
+              <Icon src={plane3} width={8} height={4.5} units={'vw'} className={'end'}/>
             </div>
             <div id={'pen'}>
-              <Icon src={pen1} width={8} height={5} units={'vw'} className={'start'}/>
-              <Icon src={pen2} width={16} height={5} units={'vw'} className={'mid'}/>
-              <Icon src={pen3} width={8} height={5} units={'vw'} className={'end'}/>
+              <Icon src={pen1} width={8} height={4.5} units={'vw'} className={'start'}/>
+              <Icon src={pen2} width={4} height={2.5} units={'vw'} className={'mid'}/>
+              <Icon src={pen3} width={8} height={2} units={'vw'} className={'end'}/>
             </div>
           </section>
           <section className={'client-col col'}>
@@ -66,7 +68,7 @@ const HowTeeChaWorks = () => {
             <CircleWidget src={studInfo} text={'Give Client Student Info'}/>
             <DownArrow/>
             <CircleWidget src={gets} text={'Gets Tutor'}/>
-            <Icon src={dotted} width={5} height={43} units={'vw'} className={'dotted-arrow'}/>
+            <Icon src={dotted} width={5} height={13} units={'vw'} className={'dotted-arrow'}/>
             <CircleWidget src={start} text={'Session Begins'}/>
             <DownArrow/>
             <CircleWidget src={counselling} text={'Mentoring & Counselling'}/>

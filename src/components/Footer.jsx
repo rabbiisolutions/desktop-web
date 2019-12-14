@@ -3,10 +3,10 @@ import Icon from "./basic/Icon";
 import phone from "../icons/contacts/ic_round-perm-phone-msgphone.svg"
 import whatsapp from "../icons/contacts/bx_bxl-whatsappwhatsapp.svg"
 import mail from "../icons/contacts/bx_bx-mail-sendmail.svg"
-import twitter from "../icons/social/jam_twitter-circletwitter.svg"
-import youtube from "../icons/social/jam_youtube-circleyoutube.svg"
-import facebook from "../icons/social/jam_facebook-circlefacebook.svg"
-import linkedin from "../icons/social/jam_linkedin-circlelinkedin.svg"
+import twitter from "../icons/social/circle-twitter.svg"
+import youtube from "../icons/social/circle-youtube.svg"
+import facebook from "../icons/social/circle-facebook.svg"
+import linkedin from "../icons/social/circle-linkedin.svg"
 import texts from "../constants/Texts";
 import Logo from "./composite/Logo";
 

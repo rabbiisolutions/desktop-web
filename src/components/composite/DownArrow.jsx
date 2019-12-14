@@ -1,11 +1,11 @@
-import down from "../../icons/howTeeChaWorks/fa-solid_long-arrow-alt-downdown-solid.svg";
+import down from "../../icons/howTeeChaWorks/arrows/down-arrow.svg";
 import Icon from "../basic/Icon";
 import React from "react";
 
 
 const DownArrow = () => {
   return (
-      <Icon src={down} width={1.25} height={1.875} className={'down-arrow'}/>
+      <Icon src={down} width={5} height={2.25} className={'down-arrow'} units={'vw'}/>
   )
 };
 

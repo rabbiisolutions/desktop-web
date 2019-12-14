@@ -405,3 +405,97 @@ header {
         flex-wrap: wrap;
     }
 }
+
+.how-teecha-works {
+    padding: 3vw 2vw;
+    font-weight: 300;
+    font-size: 1.2vw;
+    color: color(mirage);
+
+    .columns {
+        display: flex;
+        justify-content: center;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mid-col {
+            justify-content: normal;
+            align-items: center;
+
+            #plane {
+                display: flex;
+                flex-direction: column;
+                margin-top: 24vw;
+
+                .mid {
+                    margin-left: 3vw;
+                }
+                .end {
+                    margin-left: 11.5vw;
+                }
+            }
+
+            #pen {
+                display: flex;
+                flex-direction: column;
+                margin-top: 7vw;
+
+                .mid {
+                    margin-left: 6.5vw;
+                }
+                .start {
+                    margin-left: 14vw;
+                }
+            }
+        }
+    }
+
+    .titles, .start-arrow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titles {
+        padding: 0 15vw 0;
+    }
+
+    .start-arrow {
+        padding: 0 15vw 0;
+    }
+
+    .user-title {
+        margin-bottom: 10px;
+        color: color(mirage);
+    }
+}
+
+.circle-widget {
+    .circle-icon {
+        width: 7.5vw;
+        height: 7.5vw;
+        border-radius: 50%;
+        border: 1px solid #888D94;
+        line-height: 7.5vw;
+        text-align: center;
+        fill: color(mirage);
+        color: color(mirage);
+        svg {
+            margin-top: 1.2vw;
+        }
+    }
+    .text {
+        text-align: center;
+        max-width: 12vw;
+    }
+}
+
+.section-title {
+    font-size: 2.25vw;
+    color: color(curiosBlue);
+    -webkit-text-stroke: 1px color(mirage);
+    font-weight: bold;
+    text-align: center;
+}
