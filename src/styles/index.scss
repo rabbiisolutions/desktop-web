@@ -86,8 +86,9 @@ button:hover, .btn-link:hover, .social span svg:hover {
 }
 
 .services {
-    padding: .3em 1.5em;
+    padding: .3rem 1.5rem;
     border-width: 2px;
+    font-size: .9em;
 }
 
 .client-btn, .tutor-btn {
@@ -126,6 +127,7 @@ button:hover, .btn-link:hover, .social span svg:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    z-index: 50;
 
     .logo {
         display: inline-block; // can't apply max width without inline-block or block
@@ -171,10 +173,10 @@ button:hover, .btn-link:hover, .social span svg:hover {
             cursor: $pointer;
             text-decoration: none;
             color: color(mirage);
-            margin: 0 7px;
+            margin: 0 .4375vw;
             height: available;
             .text {
-                margin: 5px 10px 0;
+                margin: 5px .625vw 0;
             }
 
             .active {
@@ -227,6 +229,7 @@ main {
     max-width: 96%;
     height: auto;
     margin: 0 2.5vw;
+    transition: all 1s ease-in-out;
 }
 
 header {
@@ -269,11 +272,13 @@ header {
 
 #teecha {
     margin-top: 8vw;
+    //position: relative;
 
     h2 {
         text-align: center;
         position: absolute;
         left: 40%;
+        z-index: 1;
 
         #teecha-title {
             letter-spacing: 0.05em;
@@ -296,6 +301,11 @@ header {
 
     #teecha-row {
         display: flex;
+        justify-content: center;
+
+        @include desktop {
+            justify-content: normal;
+        }
     }
 
     #boxes {
@@ -398,7 +408,7 @@ header {
         text-align: center;
         font-weight: bold;
         margin: 1vw 0;
-        font-size: 1.25vw;
+        font-size: 1.25rem;
     }
 
     .user-title {
@@ -452,7 +462,9 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            //justify-content: center;
         }
+
         .mid-col {
             justify-content: normal;
             align-items: center;
@@ -463,23 +475,24 @@ header {
                 margin-top: 24vw;
 
                 .mid {
-                    margin-left: 3vw;
+                    margin-left: 5.5vw;
                 }
                 .end {
-                    margin-left: 11.5vw;
+                    margin-left: 9vw;
+                    margin-top: .5vw;
                 }
             }
 
             #pen {
                 display: flex;
                 flex-direction: column;
-                margin-top: 7vw;
+                margin-top: 16vw;
 
                 .mid {
                     margin-left: 6.5vw;
                 }
                 .start {
-                    margin-left: 14vw;
+                    margin-left: 9.25vw;
                 }
             }
         }
@@ -490,12 +503,8 @@ header {
         justify-content: space-between;
     }
 
-    .titles {
-        //padding: 0 15vw 0;
-    }
-
-    .start-arrow {
-        //padding: 0 15vw 0;
+    .titles, .start-arrow {
+        padding: 0 7vw 0;
     }
 
     .user-title {
@@ -520,7 +529,7 @@ header {
     }
     .text {
         text-align: center;
-        max-width: 12vw;
+        max-width: 7vw;
     }
 }
 
@@ -538,7 +547,10 @@ header {
 
 .reviews {
     .row {
-        display: flex;
+        display: block;
+        @include desktop {
+            display: flex;
+        }
     }
     margin: 0 7%;
 }
@@ -554,22 +566,40 @@ header {
 }
 
 .review {
-    width: 50%;
+    width: auto;
+    @include desktop {
+        width: 50%;
+    }
     .stars {
-        margin: 1.5vw 0;
+        margin: 1.125vw 0;
     }
 }
 
 #featured-tutors {
-    width: 50%;
+    width: auto;
+    @include desktop {
+        width: 50%;
+    }
+}
+
+.featured-image {
+    max-height: 100%;
+    width: auto;
 }
 
 .featured-tutor, .review {
-    padding: 1.5vw 2vw;
+    padding: 3vw 3vw;
+    @include desktop {
+        padding: 1.5vw 2vw;
+    }
 
     .tutor-name, .reviewer-name {
         font-weight: 600;
-        font-size: 1.25vw;
+        font-size: 1.25rem;
+
+        @include desktop {
+            font-size: 1.25vw;
+        }
     }
 
     .stars {
@@ -591,8 +621,11 @@ header {
     .comment {
         color: color(mirage);
         margin-bottom: 12px;
-        font-size: 1.125vw;
+        font-size: 1.125rem;
         font-weight: 300;
+        @include desktop {
+            font-size: 1.125vw;
+        }
 
         div {
             margin-bottom: 1vw;
@@ -604,8 +637,11 @@ header {
     color: color(mirage74);
     max-width: 50%;
     text-align: right;
-    font-size: 1.0125vw;
+    font-size: 1.0125rem;
     font-weight: 600;
+    @include desktop {
+        font-size: 1.0125vw;
+    }
 }
 
 .tutor-name, .reviewer-name {
@@ -625,9 +661,12 @@ header {
         background: color(mercury);
         padding: 10px;
         color: color(mirage);
-        font-size: 1.0125vw;
+        font-size: 1.0125rem;
         font-weight: 300;
         display: block;
+        @include desktop {
+            font-size: 1.0125vw;
+        }
     }
 
     .areas:hover {
@@ -646,22 +685,41 @@ footer {
     #lighter {
         background-color: color(alto);
         display: flex;
-        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
         padding: 2vw 3vw;
+
+        #company-info {
+            text-align: center;
+            @include desktop {
+                text-align: left;
+            }
+        }
+
+        @include desktop {
+            flex-direction: row;
+            align-items: normal;
+        }
 
         #contacts-title, #find-us-title {
             color: color(mirage64);
             text-align: center;
-            font-size: 1.5vw;
+            font-size: 1.5rem;
             margin: 1vw 0 1vw;
             font-weight: 300;
         }
 
         .col {
-            width: 33%;
+            margin-bottom: 6vw;
+            width: 80%;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @include desktop {
+                width: 33%;
+                margin-bottom: 0;
+            }
         }
 
         p {
@@ -692,13 +750,13 @@ footer {
         font-weight: 300;
 
         a {
-            font-size: 1.125vw;
+            font-size: 1.125rem;
             margin-right: 25px;
         }
 
         .copyright {
             color: color(mirage64);
-            font-size: 1.125vw;
+            font-size: 1.125rem;
             font-weight: 300;
         }
     }
@@ -766,5 +824,21 @@ footer {
         color: color(deepSeaGreen);
         font-size: 3.5vw;
         text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.teecha-image, .featured-image {
+    display: none;
+}
+
+.reviews-image:hover, .landing-image:hover, .teecha-image:hover, .featured-image:hover {
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+@include desktop {
+    .teecha-image, .featured-image {
+        display: inherit;
+        transition: all 1s ease-in-out;
     }
 }

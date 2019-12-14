@@ -53,14 +53,14 @@ const HowTeeChaWorks = () => {
             </section>
             <section className={'mid-col col'}>
               <div id={'plane'}>
-                <Icon src={plane1} width={8} height={4.5} units={'vw'} className={'start'}/>
+                <Icon src={plane1} width={8} height={3} units={'vw'} className={'start'}/>
                 <Icon src={plane2} width={8} height={3} units={'vw'} className={'mid'}/>
-                <Icon src={plane3} width={8} height={4.5} units={'vw'} className={'end'}/>
+                <Icon src={plane3} width={8} height={3} units={'vw'} className={'end'}/>
               </div>
               <div id={'pen'}>
-                <Icon src={pen1} width={8} height={4.5} units={'vw'} className={'start'}/>
+                <Icon src={pen1} width={8} height={3} units={'vw'} className={'start'}/>
                 <Icon src={pen2} width={4} height={2.5} units={'vw'} className={'mid'}/>
-                <Icon src={pen3} width={8} height={2} units={'vw'} className={'end'}/>
+                <Icon src={pen3} width={8} height={3} units={'vw'} className={'end'}/>
               </div>
             </section>
             <section className={'client-col col'}>
@@ -69,7 +69,7 @@ const HowTeeChaWorks = () => {
               <CircleWidget src={studInfo} text={'Give Client Student Info'}/>
               <DownArrow/>
               <CircleWidget src={gets} text={'Gets Tutor'}/>
-              <Icon src={dotted} width={5} height={13} units={'vw'} className={'dotted-arrow'}/>
+              <Icon src={dotted} width={5} height={15} units={'vw'} className={'dotted-arrow'}/>
               <CircleWidget src={start} text={'Session Begins'}/>
               <DownArrow/>
               <CircleWidget src={counselling} text={'Mentoring & Counselling'}/>

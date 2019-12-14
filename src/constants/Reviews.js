@@ -2,7 +2,7 @@ import texts from "./Texts";
 
 const clientReviews = [
   {
-    name: 'Mutunga Katola', description: 'Buruburu', key: "b1",
+    name: 'Mutunga Katola', description: 'from Buruburu', key: "b1",
     social:{
       url: 'mailto:mkatola@associate.crcna.org'
     },
@@ -25,7 +25,7 @@ const clientReviews = [
         ' company for their work.\n'
   },
   {
-    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "b3",
+    name: 'Mr. Calvins Okello', description: 'A National Examiner', key: "b3",
     social:{
       url: 'https://twitter.com/OkelloOnuko'
     },
@@ -36,7 +36,7 @@ const clientReviews = [
         ' resources and teaching services are provided to learners at the comfort of their homes'
   },
   {
-    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "b4",
+    name: 'John Mwendwa', description: 'Kahawa Wendani resident', key: "b4",
     social:{
       url: 'https://www.facebook.com/john.mwendwa.33'
     },

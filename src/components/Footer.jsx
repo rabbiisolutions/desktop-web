@@ -26,15 +26,15 @@ const Footer = () => {
             <div id="contacts-title">{texts.contacts}</div>
             <div id={'contact-list'}>
               <span className="icon-text">
-                <Icon src={phone} className="footer-icon" height={3} width={3} units={'vw'}/>
+                <Icon src={phone} className="footer-icon" height={3} width={3} units={'rem'}/>
                 <span>{texts.safaricom}</span>
               </span>
               <span className="icon-text">
-                <Icon src={whatsapp} className="footer-icon" height={3} width={3} units={'vw'}/>
+                <Icon src={whatsapp} className="footer-icon" height={3} width={3} units={'rem'}/>
                 <span>{texts.telkom}</span>
               </span>
               <span className="icon-text">
-                <Icon src={mail} className="footer-icon" height={3} width={3} units={'vw'}/>
+                <Icon src={mail} className="footer-icon" height={3} width={3} units={'rem'}/>
                 <span>{texts.sema}</span>
               </span>
             </div>
@@ -43,16 +43,16 @@ const Footer = () => {
             <div id="find-us-title">{texts.findUs}</div>
             <div id="social">
               <a href="https://www.facebook.com/rabbiitech/" target="_blank" rel="noopener noreferrer">
-                <Icon src={facebook} className="footer-icon social" height={3} width={3} units={'vw'}/>
+                <Icon src={facebook} className="footer-icon social" height={3} width={3} units={'rem'}/>
               </a>
               <a href="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg" target="_blank" rel="noopener noreferrer">
-                <Icon src={youtube} className="footer-icon social" height={3} width={3} units={'vw'}/>
+                <Icon src={youtube} className="footer-icon social" height={3} width={3} units={'rem'}/>
               </a>
               <a href="https://twitter.com/RabbiiTech" target="_blank" rel="noopener noreferrer">
-                <Icon src={twitter} className="footer-icon social" height={3} width={3} units={'vw'}/>
+                <Icon src={twitter} className="footer-icon social" height={3} width={3} units={'rem'}/>
               </a>
               <a href="https://www.linkedin.com/company/Rabbii-technology-innovations-ltd/" target="_blank" rel="noopener noreferrer">
-                <Icon src={linkedin} className="footer-icon social" height={3} width={3} units={'vw'}/>
+                <Icon src={linkedin} className="footer-icon social" height={3} width={3} units={'rem'}/>
               </a>
             </div>
           </div>
