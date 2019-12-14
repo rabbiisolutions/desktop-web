@@ -10,9 +10,9 @@ import ImageWebp from "../helpers/ImageWebp";
 const FeaturedTutors = () => {
   return (
       <section id="featured">
-        <h1 className="title">{texts.featuredTutors}</h1>
+        <h1 className="section-title">{texts.featuredTutors}</h1>
         <div id={'featured-row'}>
-          <div className="featured-tutors">
+          <div id="featured-tutors">
             {FeaturedTutor(featuredTutors[0])}
             {FeaturedTutor(featuredTutors[1])}
           </div>

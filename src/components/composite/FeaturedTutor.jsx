@@ -2,14 +2,29 @@ import React from "react";
 import renderStars from "./Stars";
 
 
+const mapComment = (commentObj) => {
+  return (
+      commentObj.map(comment => (
+              <div>{comment}</div>
+          )
+      )
+  )
+};
+
 const FeaturedTutor = (props) => {
   return (
       <div className="featured-tutor" key={props.key}>
         <div className="top">
-          <span className="featured-tutor">{props.name}</span>
+          <span className="tutor-name">{props.name}</span>
           <span className="tutor-description">({props.description})</span>
         </div>
-        <div className="comment">{props.comment}</div>
+        <div className="comment">
+          {
+            typeof props.comment === "object" ?
+                mapComment(props.comment) :
+                props.comment
+          }
+        </div>
         <div className="bottom">
           <span className="areas">{props.areas}</span>
           <span className="stars">{renderStars({shade: props.stars.shade, height: 2, key: props.key})}</span>
