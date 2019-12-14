@@ -24,7 +24,7 @@ function App() {
           <FeaturedTutors/>
         </main>
         <SideBar/>
-        <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp}/>
+        <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
         <Footer/>
       </Router>

@@ -81,7 +81,7 @@ a:hover {
     color: color(curiosBlue);
 }
 
-button:hover, .btn-link:hover {
+button:hover, .btn-link:hover, .social span svg:hover {
     transform: scale(1.1);
 }
 
@@ -103,6 +103,16 @@ button:hover, .btn-link:hover {
 
 .hidden {
     display: none;
+}
+
+.page-mask {
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
 }
 
 #nav-bar {
@@ -351,12 +361,6 @@ header {
         }
     }
 
-    .info {
-        font-weight: 300;
-        font-size: .8em;
-        text-align: center;
-    }
-
     #catalogue {
         margin: 2vw 0;
         display: flex;
@@ -371,6 +375,12 @@ header {
         }
     }
 
+}
+
+.info {
+    font-weight: 300;
+    font-size: .8em;
+    text-align: center;
 }
 
 .sign-up {
@@ -691,5 +701,70 @@ footer {
             font-size: 1.125vw;
             font-weight: 300;
         }
+    }
+}
+
+.sign-up.modal {
+    background-color: white;
+    z-index: 1000;
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 100px);
+    padding: 2vw 2vw 3vw;
+    border-radius: 5px;
+
+    .close-icon {
+        color: color(mirage64);
+    }
+
+    #tutor-btns {
+        justify-content: center;
+    }
+}
+
+.side-bar {
+    background-color: color(concrete);
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    top: $navBarHeight;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    padding: 10px 0;
+
+    .menu-title {
+        color: color(mirage64);
+        font-size: 3vw;
+        text-align: center;
+        display: block;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid color(mirage25);
+        font-weight: 300;
+    }
+
+    a.menu-item, .menu-sub-item {
+        display: block;
+        text-decoration: none;
+    }
+
+    .menu-item {
+        color: color(mirage);
+        padding: 20px 15px;
+        width: 100%;
+        cursor: $pointer;
+        font-weight: 300;
+        font-size: 3vw;
+    }
+
+    .menu-item.active, .menu-sub-item.active, .menu-item:hover, .menu-sub-item:hover {
+        font-weight: bold;
+        color: color(deepSeaGreen);
+        font-size: 3.5vw;
+        text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
     }
 }
