@@ -207,11 +207,15 @@ main {
     display: block;
 }
 
+.reviews-image, .landing-image {
+    max-width: 96%;
+    height: auto;
+    margin: 0 2.5vw;
+}
+
 header {
     .landing-image {
-        max-width: 96%;
-        height: auto;
-        margin: 0 2.5vw 2vw;
+        margin-bottom: 2vw;
     }
 
     #slogan {
@@ -498,4 +502,74 @@ header {
     -webkit-text-stroke: 1px color(mirage);
     font-weight: bold;
     text-align: center;
+}
+
+.featured-bg, .reviews {
+    background-color: color(concrete);
+    margin: 4vw 2vw 0;
+}
+
+.reviews {
+    .row {
+        display: flex;
+    }
+    margin: 0 7%;
+}
+
+.review {
+    width: 50%;
+}
+
+.featured, .review {
+    padding: 2vw;
+
+    .featured-tutor, .reviewer {
+        color: color(mirage);
+        font-weight: 600;
+        font-size: 1.25vw;
+    }
+
+    .tutor-description {
+        color: color(mirage74);
+        margin-top: 1.25vw;
+        font-size: 1.75vw;
+        font-weight: 600;
+    }
+
+    .stars {
+        margin: 1.5vw 0;
+        display: flex;
+
+        .gold span svg {
+            color: color(oldGold);
+        }
+
+        .grey span svg {
+            color: color(silver);
+        }
+
+        .star {
+            margin-right: 1vw;
+        }
+    }
+
+    .comment {
+        color: color(mirage);
+        margin-bottom: 12px;
+        font-size: 1.125vw;
+        font-weight: 300;
+
+        div {
+            margin-bottom: 4vw;
+        }
+    }
+
+    .areas {
+        background: color(mercury);
+        padding: 10px;
+        color: color(mirage);
+        font-size: 3.5vw;
+        font-weight: 300;
+        display: block;
+    }
 }

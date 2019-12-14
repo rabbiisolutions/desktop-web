@@ -15,12 +15,16 @@ const Reviews = () => {
             className={'reviews-image'}
             alt={'joyous-client'}
         />
-        <h2 className="title">{texts.reviews}</h2>
+        <h2 className="section-title">{texts.reviews}</h2>
         <div className="reviews">
-          {Review(clientReviews[0])}
-          {Review(clientReviews[1])}
-          {Review(clientReviews[2])}
-          {Review(clientReviews[3])}
+          <div className={'row'}>
+            {Review(clientReviews[0])}
+            {Review(clientReviews[1])}
+          </div>
+          <div className={'row'}>
+            {Review(clientReviews[2])}
+            {Review(clientReviews[3])}
+          </div>
         </div>
       </section>
   )
