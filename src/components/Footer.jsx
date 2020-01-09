@@ -35,7 +35,7 @@ const Footer = () => {
               </span>
               <span className="icon-text">
                 <Icon src={mail} className="footer-icon" height={3} width={3} units={'rem'}/>
-                <span>{texts.sema}</span>
+                <span><a href={'mailto:' + texts.sema}>{texts.sema}</a></span>
               </span>
             </div>
           </div>
