@@ -221,48 +221,47 @@ button:hover, .btn-link:hover, .social span svg:hover {
 
 main {
     margin-top: $navBarHeight;
-    padding-top: .5rem;
+    padding-top: 2vw;
     display: block;
 }
 
-.reviews-image, .landing-image {
+.reviews-image {
     max-width: 96%;
     height: auto;
     margin: 0 2.5vw;
     transition: all 1s ease-in-out;
 }
 
-header {
-    .landing-image {
-        margin-bottom: 2vw;
+.slide-container {
+    width: 96%;
+    margin: auto;
+
+    #vision {
+        position: static;
+        color: #1B2531;
+        text-align: center;
+        background-color: #ECECEC;
+        padding: 2vw;
+        width: 80%;
+        margin: auto;
+
+        @include desktop {
+            position: absolute;
+            left: 23vw;
+            top: 37vw;
+            z-index: 5;
+            font-size: 2.5vw;
+            width: auto;
+            background: rgba(0, 0, 0, 0.38);
+            border-radius: 5px;
+            color: white;
+            padding: .5vw;
+        }
     }
 
-    #slogan {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 1vw 0 2vw 0;
-        padding: 0 10px;
-
-        .idea {
-            display: inline-block;
-        }
-
-        .idea span svg{
-            fill: color(curiosBlue);
-        }
-
-        .idea span svg:hover {
-            transform: scale(1.1);
-        }
-
-        .text {
-            margin-left: 2vw;
-            color: color(curiosBlue);
-            font-size: 4.5vw;
-            font-weight: bold;
-        }
+    .slide-image {
+        width: 100%;
+        height: auto;
     }
 }
 
