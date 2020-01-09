@@ -1,24 +1,24 @@
 import React from "react";
-import presidentJpeg from "../images/carousel/1.png";
-import presidentWebp from "../images/carousel/1.webp";
-import pilotJpeg from "../images/carousel/2.png";
-import pilotWebp from "../images/carousel/2.webp";
-import engineerJpeg from "../images/carousel/3.png";
-import engineerWebp from "../images/carousel/3.webp";
-import saxJpeg from "../images/carousel/4.png";
-import saxWebp from "../images/carousel/4.webp";
-import photographyJpeg from "../images/carousel/5.png";
-import photographyWebp from "../images/carousel/5.webp";
+import Jpeg1 from "../images/carousel/1.png";
+import Webp1 from "../images/carousel/1.webp";
+import Jpeg2 from "../images/carousel/2.png";
+import Webp2 from "../images/carousel/2.webp";
+import Jpeg3 from "../images/carousel/3.png";
+import Webp3 from "../images/carousel/3.webp";
+import Jpeg4 from "../images/carousel/4.png";
+import Webp4 from "../images/carousel/4.webp";
+import Jpeg5 from "../images/carousel/5.png";
+import Webp5 from "../images/carousel/5.webp";
 import ImageWebp from "../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../constants/Texts";
 
 const images = [
-  {jpeg: pilotJpeg, webp: pilotWebp},
-  {jpeg: engineerJpeg, webp: engineerWebp},
-  {jpeg: saxJpeg, webp: saxWebp},
-  {jpeg: photographyJpeg, webp: photographyWebp},
-  {jpeg: presidentJpeg, webp: presidentWebp},
+  {jpeg: Jpeg2, webp: Webp2},
+  {jpeg: Jpeg3, webp: Webp3},
+  {jpeg: Jpeg4, webp: Webp4},
+  {jpeg: Jpeg5, webp: Webp5},
+  {jpeg: Jpeg1, webp: Webp1},
 ];
 
 const zoomOutProperties = {

@@ -10,10 +10,6 @@ import ImageWebp from "../helpers/ImageWebp";
 const TeeCha = () => {
   return (
     <section id={"teecha"} className={'section'}>
-      <h2 id="teecha-caption">
-        <div id="teecha-title">{texts.teeCha}</div>
-        <a id="caption" href={'https://catalogue.rabbii.co.ke'}>{texts.homeTuition}</a>
-      </h2>
       <div id={'teecha-row'}>
         <ImageWebp
             src={teechaJ}
@@ -22,6 +18,10 @@ const TeeCha = () => {
             alt={'student'}
         />
         <div id="boxes">
+          <h2 id="teecha-caption">
+            <div id="teecha-title">{texts.teeCha}</div>
+            <a id="caption" href={'https://catalogue.rabbii.co.ke'}>{texts.homeTuition}</a>
+          </h2>
           <div id="teecha-box">
             <div id="home-tuition-areas">{texts.homeTuitionAreas}</div>
             <div id="teecha-areas">

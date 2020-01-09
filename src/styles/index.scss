@@ -271,12 +271,10 @@ main {
 
 #teecha {
     margin-top: 8vw;
+    background-color: color(concrete);
 
     h2 {
         text-align: center;
-        position: absolute;
-        left: 40%;
-        z-index: 1;
 
         #teecha-title {
             letter-spacing: 0.05em;
@@ -307,7 +305,7 @@ main {
     }
 
     #boxes {
-        margin: 8vw 2% 0;
+        margin: 1vw 2% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -318,9 +316,15 @@ main {
         border-radius: 5px;
     }
 
+    .sign-up.box {
+        section {
+            background-color: #ECECEC;
+        }
+    }
+
     #teecha-box {
         padding: 1.5vw 3.5vw 1.5vw 2vw;
-        margin-top: 50px;
+        margin-top: 25px;
 
         #home-tuition-areas {
             text-align: center;
@@ -440,7 +444,8 @@ main {
 }
 
 #canvas {
-    background-color: color(concrete);
+    //background-color: color(concrete);
+    border: 2px solid color(concrete);
     border-radius: 5px;
     margin: 0 12%;
     padding: 2vw;
@@ -539,11 +544,17 @@ main {
 }
 
 #featured-tutors, .reviews {
-    background-color: color(concrete);
+    //background-color: color(concrete);
     margin: 2vw 2vw;
 }
 
+#reviews {
+    background-color: color(concrete);
+    padding: 3vw 0;
+}
+
 .reviews {
+    background-color: #ECECEC;
     .row {
         display: block;
         @include desktop {
@@ -829,7 +840,7 @@ footer {
     display: none;
 }
 
-.reviews-image:hover, .landing-image:hover, .teecha-image:hover, .featured-image:hover {
+.reviews-image:hover, .landing-image:hover, .featured-image:hover {
     transform: scale(1.05);
     z-index: 0;
 }
