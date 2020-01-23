@@ -9,16 +9,36 @@ import Jpeg4 from "../images/carousel/4.png";
 import Webp4 from "../images/carousel/4.webp";
 import Jpeg5 from "../images/carousel/5.png";
 import Webp5 from "../images/carousel/5.webp";
+import Jpeg6 from "../images/carousel/6.png";
+import Webp6 from "../images/carousel/6.webp";
+import Jpeg7 from "../images/carousel/7.png";
+import Webp7 from "../images/carousel/7.webp";
+import Jpeg8 from "../images/carousel/8.png";
+import Webp8 from "../images/carousel/8.webp";
+import Jpeg9 from "../images/carousel/9.png";
+import Webp9 from "../images/carousel/9.webp";
+import Jpeg10 from "../images/carousel/10.png";
+import Webp10 from "../images/carousel/10.webp";
 import ImageWebp from "../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../constants/Texts";
+import Button from "./basic/Button";
+import signUpHandler from "../events/SignUpModal";
 
-const images = [
-  {jpeg: Jpeg2, webp: Webp2},
-  {jpeg: Jpeg3, webp: Webp3},
-  {jpeg: Jpeg4, webp: Webp4},
-  {jpeg: Jpeg5, webp: Webp5},
+const set1 = [
   {jpeg: Jpeg1, webp: Webp1},
+  {jpeg: Jpeg3, webp: Webp3},
+  {jpeg: Jpeg5, webp: Webp5},
+  {jpeg: Jpeg7, webp: Webp7},
+  {jpeg: Jpeg9, webp: Webp9},
+];
+
+const set2 = [
+  {jpeg: Jpeg2, webp: Webp2},
+  {jpeg: Jpeg4, webp: Webp4},
+  {jpeg: Jpeg6, webp: Webp6},
+  {jpeg: Jpeg8, webp: Webp8},
+  {jpeg: Jpeg10, webp: Webp10},
 ];
 
 const zoomOutProperties = {
@@ -27,7 +47,7 @@ const zoomOutProperties = {
   infinite: true,
   indicators: true,
   scale: 0.4,
-  arrows: true
+  arrows: false
 };
 
 
@@ -36,10 +56,20 @@ const Landing = () => {
       <div className="slide-container" id={'start'}>
         <Zoom {...zoomOutProperties}>
           {
-            images.map((each, index) => <ImageWebp key={index} style={{width: "100%"}} src={each.jpeg} srcWebp={each.webp} className={'slide-image'}/>)
+            set1.map((each, index) => <ImageWebp key={index} style={{width: "100%"}} src={each.jpeg} srcWebp={each.webp} className={'slide-image'}/>)
           }
         </Zoom>
-        <div id={'vision'}>{texts.tagLine}</div>
+        <div id={'greeting'}>
+          <h2>achieve your potential</h2>
+          <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
+          <p>Sign up to see our price list.</p>
+          <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
+        </div>
+        <Zoom {...zoomOutProperties}>
+          {
+            set2.map((each, index) => <ImageWebp key={index} style={{width: "100%"}} src={each.jpeg} srcWebp={each.webp} className={'slide-image'}/>)
+          }
+        </Zoom>
       </div>
   )
 };

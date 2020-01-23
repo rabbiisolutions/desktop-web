@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/base.css';
 import './styles/nav-bar.css';
+import './styles/landing.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

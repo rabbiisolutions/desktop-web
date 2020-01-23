@@ -1,0 +1,44 @@
+.slide-container {
+    display: flex;
+    width: 96%;
+    margin: 2vw auto;
+}
+
+.slide-container > div {
+    width: 33%;
+}
+
+.slide-image {
+    width: auto;
+    height: 100%;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+        font-weight: 300;
+    }
+
+    .services {
+        padding: .7vw 1.5vw;
+        font-size: 1.25vw;
+    }
+}
+
+.services {
+    padding: .3rem 1.5rem;
+    border-width: 2px;
+    font-size: .9em;
+}
