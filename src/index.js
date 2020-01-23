@@ -2,7 +2,8 @@ import 'react-app-polyfill/ie9';
 import 'react-app-polyfill/stable';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './styles/base.css';
+import './styles/nav-bar.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
