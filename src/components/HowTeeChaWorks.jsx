@@ -22,7 +22,7 @@ import Icon from "./basic/Icon";
 import DownArrow from "./composite/DownArrow.jsx";
 import FLowLine from "./composite/FlowLine.jsx";
 import React from "react";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
 
 const HowTeeChaWorks = () => {
   return (

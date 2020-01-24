@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import SignUpModal from "./components/SignUpModal";
 import Landing from "./components/Landing";
 import Welcome from "./components/Welcome";
-import texts from "./constants/Texts";
+import texts from "./constants/texts";
 
 function App() {
   return (

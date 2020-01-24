@@ -1,4 +1,4 @@
-import texts from "./Texts";
+import texts from "./texts";
 
 const clientReviews = [
   {

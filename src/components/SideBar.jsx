@@ -1,5 +1,5 @@
 import React from "react";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
 import menuToggle from "../events/MenuToggle";
 
 

@@ -1,5 +1,7 @@
 import React from "react";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
+import benefits from "../constants/benefits";
+import Benefit from "./composite/Benefit";
 
 const Welcome = () => {
   return (
@@ -9,6 +11,16 @@ const Welcome = () => {
           <div className={'sell'}>{texts.welcomeSell[0]}</div>
           <div className={'sell'}>{texts.welcomeSell[1]}</div>
           <div id={'emphasis'}>{texts.welcomeSell[2]}</div>
+        </div>
+        <div className={'row'}>
+          {Benefit(benefits.sameGender)}
+          {Benefit(benefits.plus500)}
+          {Benefit(benefits.academicCounselling)}
+        </div>
+        <div className={'row'}>
+          {Benefit(benefits.affordable)}
+          {Benefit(benefits.studentRatio)}
+          {Benefit(benefits.peerToPeer)}
         </div>
       </section>
   )

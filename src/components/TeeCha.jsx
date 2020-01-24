@@ -1,5 +1,5 @@
 import React from "react";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
 import teeChaAreasLists from "./composite/TeeChaAreasList";
 import SignUpModal from "./SignUpModal";
 import ButtonLink from "./basic/ButtonLink.jsx";

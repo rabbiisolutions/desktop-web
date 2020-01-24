@@ -40,13 +40,26 @@ $colors: (
         border-bottom: 2px solid white;
     }
 
-    .sell, .benefit-desc {
+    .sell, .desc {
         font-weight: 300;
+    }
+
+    .benefit {
+        width: 33%;
+        padding: 0 2vw;
+    }
+
+    .title {
+        text-transform: capitalize;
     }
 
     #emphasis {
         font-weight: bold;
         margin: 0 0 4vw;
         text-transform: capitalize;
+    }
+
+    .row {
+        display: flex;
     }
 }

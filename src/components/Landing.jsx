@@ -21,7 +21,7 @@ import Jpeg10 from "../images/carousel/10.png";
 import Webp10 from "../images/carousel/10.webp";
 import ImageWebp from "../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
 import Button from "./basic/Button";
 import signUpHandler from "../events/SignUpModal";
 

@@ -1,6 +1,6 @@
 import FeaturedTutor from "./composite/FeaturedTutor";
 import featuredTutors from "../constants/FeaturedTutors";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
 import React from "react";
 import featuredJ from "../images/featured.jpg";
 import featuredW from "../images/featured.webp";

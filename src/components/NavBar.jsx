@@ -3,7 +3,7 @@ import Logo from "./composite/Logo";
 import Icon from "./basic/Icon";
 import toggle from "../icons/menu.svg"
 import Button from "./basic/Button";
-import texts from "../constants/Texts";
+import texts from "../constants/texts";
 import signUpHandler from "../events/SignUpModal";
 import menuToggle from "../events/MenuToggle";
 
