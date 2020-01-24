@@ -1,3 +1,26 @@
+$colors: (
+    // navBar
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
 $desktop: 800px;
 
 @mixin desktop {
@@ -8,12 +31,15 @@ $desktop: 800px;
 
 .slide-container {
     display: flex;
-    width: 96%;
-    margin: 4vw auto;
+    padding: 4vw;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slide-container > div {
-    width: 33%;
+    width: 31.5%;
 }
 
 .slide-image {
@@ -25,13 +51,14 @@ $desktop: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 2vw;
     text-align: center;
+    background: rgba(255, 255, 255, 0.63);
 
     h2 {
         text-transform: uppercase;
         font-size: 2.5vw;
+        margin: 0;
     }
 
     p {
@@ -39,11 +66,20 @@ $desktop: 800px;
         font-weight: 300;
     }
 
-    .services {
+    #dark-box {
+        background-color: #F4F4F4;
+        padding: 0 3vw 1vw;
+        border-radius: 5px;
+        border: 1px solid color(silver);
 
-        @include desktop {
-            padding: 1vw 3vw;
-            font-size: 2vw;
+        .services {
+            background-color: color(curiosBlue);
+            color: color(white);
+
+            @include desktop {
+                padding: 1vw 3vw;
+                font-size: 2vw;
+            }
         }
     }
 }

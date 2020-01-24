@@ -85,7 +85,7 @@ button:hover, .btn-link:hover, .social span svg:hover {
 
 main {
     margin-top: $navBarHeight;
-    padding-top: .5rem;
+    //padding-top: .5rem;
     display: block;
     background-color: color(alabaster);
 }
@@ -118,11 +118,6 @@ main {
 .dark {
     background-color: color(gallery);
 }
-
-/*.team-image:hover, .card-image:hover {
-    transform: scale(1.1);
-    transition: all 1s ease-in-out;
-}*/
 
 .btn-link {
     -webkit-border-radius: $webkitRadius;
