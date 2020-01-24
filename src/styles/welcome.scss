@@ -21,6 +21,15 @@ $colors: (
     @return map_get($colors, $name);
 }
 
+$desktop: 800px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+
 #welcome {
     background-color: color(white);
     padding: 6vw;
@@ -31,7 +40,10 @@ $colors: (
     }
 
     .sell, #emphasis {
-        font-size: 2vw;
+
+        @include desktop {
+            font-size: 2vw;
+        }
     }
 
     .sell, .desc {
@@ -39,7 +51,9 @@ $colors: (
     }
 
     .benefit {
-        width: 33%;
+        @include desktop {
+            width: 33%;
+        }
         padding: 0 2vw;
     }
 
@@ -55,5 +69,10 @@ $colors: (
 
     .row {
         display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+        }
     }
 }

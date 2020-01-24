@@ -1,3 +1,11 @@
+$desktop: 800px;
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
 .slide-container {
     display: flex;
     width: 96%;
@@ -30,11 +38,14 @@
         font-size: 1.5vw;
         font-weight: 300;
     }
-}
 
-.services {
-    padding: .7vw 1.5vw;
-    font-size: 1.25vw;
+    .services {
+
+        @include desktop {
+            padding: 1vw 3vw;
+            font-size: 2vw;
+        }
+    }
 }
 
 

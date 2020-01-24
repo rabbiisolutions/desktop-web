@@ -1,4 +1,4 @@
-$desktop: 768px;
+$desktop: 800px;
 $monitor: 1192px;
 
 @mixin desktop {
@@ -60,11 +60,14 @@ $monitor: 1192px;
 }
 
 #services {
+    padding-bottom: 7vw;
     @include desktop {
         margin-top: 5vw;
-        padding-bottom: 7vw;
+    }
 
-        h4 {
+    h4 {
+        margin-left: 6vw;
+        @include desktop {
             margin-left: 12vw;
         }
     }
@@ -81,13 +84,17 @@ $monitor: 1192px;
     margin: 6rem auto;
 
     p {
-        font-size: 1.5vw;
+        @include desktop {
+            font-size: 1.5vw;
+        }
         font-weight: 300;
     }
 
     li {
         margin: 1vw 0;
-        font-size: 1.125vw;
+        @include desktop {
+            font-size: 1.125vw;
+        }
     }
 
     .services {
@@ -122,18 +129,3 @@ $monitor: 1192px;
         left: 43.5vw;
     }
 }
-
-/*.value-desc {
-    font-weight: 300;
-    @include desktop {
-        font-size: 1.5vw;
-    }
-}
-
-.value-title {
-    text-transform: capitalize;
-    font-size: 1.25rem;
-    @include desktop {
-        font-size: 1.625vw;
-    }
-}*/
