@@ -87,8 +87,8 @@ const specialNeeds = {
   desc: ['You can get a qualified trained special needs ' +
   'teacher for your son or daughter at whatever ' +
   'level. We have teachers who are able to handle ' +
-  'students who require different level of care either ' +
-  'physically, or psychologically.'],
+  'students who require different level of care ' +
+  'in areas such as:'],
   examples: ListItem(
       [{key: 'f4', text: 'Physical'}, {key: 'f5', text: 'Developmental'},
       {key: 'f6', text: 'Behavioural/Emotional'}, {key: 'f7', text: 'Sensory/Impaired...etc'}]

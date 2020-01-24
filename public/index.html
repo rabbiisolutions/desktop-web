@@ -54,24 +54,26 @@
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v5.0'
-    });
+  FB.init({
+  xfbml            : true,
+  version          : 'v5.0'
+  });
   };
 
   (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
-     attribution=install_email
-     page_id="529204794274924">
+     attribution=setup_tool
+     page_id="529204794274924"
+     logged_in_greeting="Hi, Welcome to Rabbii. My name is Solomon and you can ask me any question"
+     logged_out_greeting="Hi, Welcome to Rabbii. My name is Solomon and you can ask me any question">
 </div>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>

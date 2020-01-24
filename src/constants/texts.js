@@ -4,7 +4,7 @@ const homeTuition = '* Free Home Tuition';
 const homeTuitionAreas = 'Home Tuition Areas';
 const academics = 'Academics';
 const homeTuitionInfo = '(You can access home tuition in Nairobi County and other counties Kenya)';
-const howTeeChaWorks = 'How TeeCha Works';
+const gettingATutor = 'Getting a Tutor';
 const reviews = 'Reviews';
 const dot = '⦁ ';
 const gold = 'gold';
@@ -29,7 +29,7 @@ const welcomeSell = [
 
 const texts = {
   tagLine: tagLine, teeCha: teeCha, homeTuition: homeTuition, homeTuitionAreas: homeTuitionAreas,
-  academics: academics, homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
+  academics: academics, homeTuitionInfo: homeTuitionInfo, gettingATutor: gettingATutor,
   reviews: reviews, dot: dot, grey: grey,
   signUp: signUp, contacts: contacts, findUs: findUs,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
