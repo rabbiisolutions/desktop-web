@@ -61,6 +61,7 @@ $desktop: 800px;
         box-sizing: border-box;
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        margin-bottom: 4vw;
     }
 
     .benefit::after {
@@ -95,4 +96,10 @@ $desktop: 800px;
             flex-direction: row;
         }
     }
+
+    .section-title {
+        text-align: center;
+        margin-left: 0;
+    }
+
 }
