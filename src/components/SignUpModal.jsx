@@ -13,7 +13,6 @@ const SignUpModal = (props) => {
           </div>
           <div id="client-btns">
             <ButtonLink link="https://forms.gle/y7KTkMDtYCtAywDu6" className="client-btn" value="Get a Tutor"/>
-            <ButtonLink link="https://forms.gle/3zg3FSExEBdBPHd39" className="client-btn" value="Referrals"/>
           </div>
         </section>
         <section>
