@@ -1,0 +1,52 @@
+$colors: (
+    // navBar
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+#welcome {
+    background-color: color(white);
+    padding: 6vw;
+    margin-top: 3rem;
+
+    .sell, #emphasis {
+        text-align: center;
+    }
+
+    .sell, #emphasis {
+        font-size: 2vw;
+    }
+
+    .benefit-desc {
+        font-size: 4.25vw;
+        padding-bottom: 2vw;
+        border-bottom: 2px solid white;
+    }
+
+    .sell, .benefit-desc {
+        font-weight: 300;
+    }
+
+    #emphasis {
+        font-weight: bold;
+        margin: 0 0 4vw;
+        text-transform: capitalize;
+    }
+}

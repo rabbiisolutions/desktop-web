@@ -20,6 +20,12 @@ const menuTitle = 'Menu';
 const menuItems = ['Payment', 'Become a Tutor', 'About Us', 'Trending', 'FAQs'];
 const ourServices = ['TeeCha'];
 const hidden = 'hidden';
+const welcome = 'Welcome to rabbii';
+const welcomeSell = [
+  '80% of students do not get admitted to university through the government, ',
+  '75% of students do not get 300+ marks in their final exam in primary school, ',
+  'We exist to ensure you succeed!'
+];
 
 
 const texts = {
@@ -28,7 +34,8 @@ const texts = {
   reviews: reviews, featuredTutors: featuredTutors, dot: dot, grey: grey,
   signUp: signUp, contacts: contacts, findUs: findUs,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
-  menuItems: menuItems, ourServices: ourServices, hidden: hidden, gold: gold
+  menuItems: menuItems, ourServices: ourServices, hidden: hidden, gold: gold, welcome: welcome,
+  welcomeSell: welcomeSell
 };
 
 export default texts;

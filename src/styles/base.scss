@@ -101,12 +101,12 @@ main {
     font-size: 5vw;
 
     @include desktop {
-        margin-left: 9vw;
+        margin-left: 6vw;
         font-size: 2.25vw;
     }
 
     @include monitor {
-        font-size: 1.75vw;
+        font-size: 2.5vw;
     }
 }
 
