@@ -6,13 +6,12 @@ const academics = 'Academics';
 const homeTuitionInfo = '(You can access home tuition in Nairobi County and other counties Kenya)';
 const howTeeChaWorks = 'How TeeCha Works';
 const reviews = 'Reviews';
-const featuredTutors = 'Featured Tutors';
 const dot = '⦁ ';
 const gold = 'gold';
 const grey = 'grey';
 const signUp = 'Sign Up';
-const contacts = 'Contacts';
-const findUs = 'Find Us On';
+const contacts = 'Talk to us';
+const findUs = 'Connect';
 const safaricom = '0798 884 419';
 const telkom = '0772 915 361';
 const sema = 'sema@rabbii.co.ke';
@@ -31,7 +30,7 @@ const welcomeSell = [
 const texts = {
   tagLine: tagLine, teeCha: teeCha, homeTuition: homeTuition, homeTuitionAreas: homeTuitionAreas,
   academics: academics, homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
-  reviews: reviews, featuredTutors: featuredTutors, dot: dot, grey: grey,
+  reviews: reviews, dot: dot, grey: grey,
   signUp: signUp, contacts: contacts, findUs: findUs,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
   menuItems: menuItems, ourServices: ourServices, hidden: hidden, gold: gold, welcome: welcome,

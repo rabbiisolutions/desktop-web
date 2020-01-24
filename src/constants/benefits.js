@@ -15,7 +15,7 @@ const peerToPeer = {
   title: 'Peer to peer Tuition',
   desc: 'We have many teachers who are young and starting out in their' +
     'careers. Students at times prefer and need younger teachers as they' +
-    'find them easily approachable which facilitates greater discussion' +
+    'find them easily approachable which facilitates greater discussion ' +
     'during the session.'
 };
 const affordable = {
