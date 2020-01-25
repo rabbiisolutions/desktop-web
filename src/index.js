@@ -7,6 +7,7 @@ import './styles/nav-bar.css';
 import './styles/landing.css';
 import './styles/welcome.css';
 import './styles/services.css';
+import './styles/reviews.css';
 import './styles/footer.css';
 import './styles/side-bar.css';
 import './styles/signup-modal.css';

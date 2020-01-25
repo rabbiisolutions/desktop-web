@@ -9,6 +9,7 @@ import Landing from "./components/Landing";
 import Welcome from "./components/Welcome";
 import Services from "./components/Services";
 import HowToGet from "./components/HowToGet";
+import Reviews from "./components/Reviews";
 import texts from "./constants/texts";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Welcome/>
           <Services/>
           <HowToGet/>
+          <Reviews/>
         </main>
         <SideBar/>
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>

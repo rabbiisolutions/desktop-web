@@ -86,7 +86,6 @@ button:hover, .btn-link:hover, .social span svg:hover {
 main {
     margin-top: $navBarHeight;
     display: block;
-    background-color: color(alabaster);
 }
 
 .info {
@@ -149,11 +148,13 @@ main {
 }
 
 #how-teecha-works {
-    background-color: color(white);
-    padding: 3vw;
+    background-color: color(alabaster);
+    padding: 3vw 5vw;
 }
 
 .how-icon {
     border: 1px solid color(mirage25);
     border-radius: 5px;
+    margin: 0 auto;
+    width: 90%;
 }

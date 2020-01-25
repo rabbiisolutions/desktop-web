@@ -1,17 +1,20 @@
 import React from "react";
-import renderStars from "./Stars";
+import renderStars from "../composite/Stars";
 
 const Review = (props) => {
   return (
       <div className="review" key={props.key}>
         <div className="reviewer">
-          <a href={props.social.url} target="_blank" rel="noopener noreferrer">
-            <span className={'reviewer-name'}>{props.name}</span>
-          </a>
-          <span className={'reviewer-desc'}>{props.description}</span>
+          <span>{props.name}</span>
         </div>
-        <div className="stars">{renderStars({shade: props.stars.shade, height: 2, key: props.key})}</div>
-        <div className="comment">{props.comment}</div>
+        <div className="comment">
+          <div className={'quotation'}>"</div>
+          <div className={'text'}>{props.comment}</div>
+        </div>
+        <div className="desc">
+          <span>{props.description}</span>
+        </div>
+        <div className="stars">{renderStars({shade: props.stars.shade, height: 2, key: props.stars.key})}</div>
       </div>
   );
 };
