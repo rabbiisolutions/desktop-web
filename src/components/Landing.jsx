@@ -23,6 +23,7 @@ import ImageWebp from "../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../constants/texts";
 import Button from "./basic/Button";
+import ButtonLink from "./basic/ButtonLink";
 import signUpHandler from "../events/SignUpModal";
 
 const set1 = [
@@ -64,7 +65,7 @@ const Landing = () => {
           <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
           <div id={'dark-box'}>
             <p>Sign up to see our price list.</p>
-            <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
+            <ButtonLink value={texts.signUp} link={"https://forms.gle/3JZCSM2JJTPLTjP57"} className="services"/>
           </div>
         </div>
         <Zoom {...zoomOutProperties}>

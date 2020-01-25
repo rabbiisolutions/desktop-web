@@ -21,12 +21,30 @@ $colors: (
     @return map_get($colors, $name);
 }
 
+$desktop: 800px;
+$monitor: 1192px;
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
 .review {
-    margin: 2vw;
+    margin: auto 2vw;
+    width: 50%;
+
+    @include desktop {
+        width: 100%;
+        margin: 2vw;
+    }
 
     .reviewer, .desc {
         color: color(mirage);
         font-size: 1.75vw;
+        @include desktop {
+            font-size: 3.25vw;
+        }
     }
 
     .reviewer {
@@ -55,6 +73,10 @@ $colors: (
         margin-bottom: 20px;
         font-size: 1.5vw;
         font-weight: 300;
+        margin-top: .5vw;
+        @include desktop {
+            font-size: 3vw;
+        }
     }
     .text {
         margin-top: 2vw;
@@ -63,23 +85,37 @@ $colors: (
     .quotation {
         font-weight: bold;
         font-size: 3.75vw;
+        @include desktop {
+            font-size: 7vw;
+        }
     }
 }
 
 .review-image {
-    height: 100%;
-    width: 130%;
+    height: auto;
+    width: 100%;
     border-radius: 5px;
+}
+
+.image-container {
+    width: 50%;
+    padding: 1vw 1vw;
+    @include desktop {
+        width: 100%;
+    }
 }
 
 .react-reveal {
     display: flex;
+    @include desktop {
+        flex-direction: column;
+    }
 }
 
 #reviews-cont {
     position: relative;
     overflow: hidden;
-    padding: 3vw;
+    padding: 0 3vw;
     margin: 0 auto;
     width: 80%;
     height: fit-content;
@@ -88,6 +124,10 @@ $colors: (
 #children {
     position: relative;
     height: 30vw;
+
+    @include desktop {
+        height: 100vw;
+    }
 }
 
 #dots {
@@ -101,4 +141,13 @@ $colors: (
     cursor: pointer;
     text-shadow: 1px 1px 1px #fff;
     user-select: none;
+}
+
+#reviews {
+    margin-bottom: 8vw;
+    padding-top: 3vw;
+
+    h4 {
+        margin-left: 12vw;
+    }
 }

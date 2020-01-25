@@ -45,25 +45,33 @@ const Reviews = () => {
         <Carousel>
           <Slide right>
             <div>
-              <ImageWebp src={fadeImages[1].jpeg} srcWebp={fadeImages[1].webp} className={'review-image'}/>
+              <div className={'image-container'}>
+                <ImageWebp src={fadeImages[1].jpeg} srcWebp={fadeImages[1].webp} className={'review-image'}/>
+              </div>
               {Review(clientReviews[0])}
             </div>
           </Slide>
           <Slide right>
             <div>
-              <ImageWebp src={fadeImages[0].jpeg} srcWebp={fadeImages[0].webp} className={'review-image'}/>
+              <div className={'image-container'}>
+                <ImageWebp src={fadeImages[0].jpeg} srcWebp={fadeImages[0].webp} className={'review-image'}/>
+              </div>
               {Review(clientReviews[3])}
             </div>
           </Slide>
           <Slide right>
             <div>
-              <ImageWebp src={fadeImages[2].jpeg} srcWebp={fadeImages[2].webp} className={'review-image'}/>
+              <div className={'image-container'}>
+                <ImageWebp src={fadeImages[2].jpeg} srcWebp={fadeImages[2].webp} className={'review-image'}/>
+              </div>
               {Review(clientReviews[1])}
             </div>
           </Slide>
           <Slide right>
             <div>
-              <ImageWebp src={fadeImages[3].jpeg} srcWebp={fadeImages[3].webp} className={'review-image'}/>
+              <div className={'image-container'}>
+                <ImageWebp src={fadeImages[3].jpeg} srcWebp={fadeImages[3].webp} className={'review-image'}/>
+              </div>
               {Review(clientReviews[2])}
             </div>
           </Slide>
