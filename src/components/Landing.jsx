@@ -22,9 +22,7 @@ import Webp10 from "../images/carousel/10.webp";
 import ImageWebp from "../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../constants/texts";
-import Button from "./basic/Button";
 import ButtonLink from "./basic/ButtonLink";
-import signUpHandler from "../events/SignUpModal";
 
 const set1 = [
   {jpeg: Jpeg1, webp: Webp1},
