@@ -64,6 +64,11 @@ $desktop: 800px;
         margin-bottom: 4vw;
     }
 
+    .benefit:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-in-out;
+    }
+
     .benefit::after {
         background: #27A1DA;
         border-radius: 5px 5px 0 0;
