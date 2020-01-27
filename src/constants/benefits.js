@@ -30,15 +30,15 @@ const plus500 = {
     ' have helped but also, by the high number of teachers who are registering to work with us daily.' +
     ' We have the ability to get you a tutor on the same day you request for one.'
 };
-const studentRatio = {
-  title: 'Low teacher to student ratio',
+const oneOnOne = {
+  title: 'One on One Tuition',
   desc: 'Your child gets personalized attention; the teacher\'s primary focus is' +
     'on your child and his/her needs as opposed to a class setting where' +
     'the teachers attention is divided among his/her students.'};
 
 const benefits = {
   sameGender: sameGender, academicCounselling: academicCounselling, peerToPeer: peerToPeer,
-  affordable: affordable, plus500: plus500, studentRatio: studentRatio
+  affordable: affordable, plus500: plus500, studentRatio: oneOnOne
 };
 
 export default benefits;
