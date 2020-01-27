@@ -46,7 +46,7 @@ const Reviews = () => {
           <Slide right>
             <div>
               <div className={'image-container'}>
-                <ImageWebp src={fadeImages[1].jpeg} srcWebp={fadeImages[1].webp} className={'review-image'}/>
+                <ImageWebp src={fadeImages[0].jpeg} srcWebp={fadeImages[0].webp} className={'review-image'}/>
               </div>
               {Review(clientReviews[0])}
             </div>
@@ -54,7 +54,7 @@ const Reviews = () => {
           <Slide right>
             <div>
               <div className={'image-container'}>
-                <ImageWebp src={fadeImages[0].jpeg} srcWebp={fadeImages[0].webp} className={'review-image'}/>
+                <ImageWebp src={fadeImages[1].jpeg} srcWebp={fadeImages[1].webp} className={'review-image'}/>
               </div>
               {Review(clientReviews[3])}
             </div>
