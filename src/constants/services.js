@@ -5,13 +5,13 @@ import interJpeg from "../images/services/jCIMcOpFHig-1.jpg";
 import interWebp from "../images/services/jCIMcOpFHig-1.webp";
 import testsJpeg from "../images/services/jCIMcOpFHig-2.jpg";
 import testsWebp from "../images/services/jCIMcOpFHig-2.webp";
-import languageJpeg from "../images/services/jCIMcOpFHig-3.jpg";
+import languageJpeg from "../images/services/jCIMcOpFHig-3.png";
 import languageWebp from "../images/services/jCIMcOpFHig-3.webp";
 import specialJpeg from "../images/services/jCIMcOpFHig-4.jpg";
 import specialWebp from "../images/services/jCIMcOpFHig-4.webp";
 import hobbiesJpeg from "../images/services/jCIMcOpFHig-5.jpg";
 import hobbiesWebp from "../images/services/jCIMcOpFHig-5.webp";
-import gamesJpeg from "../images/services/jCIMcOpFHig-6.jpg";
+import gamesJpeg from "../images/services/jCIMcOpFHig-6.png";
 import gamesWebp from "../images/services/jCIMcOpFHig-6.webp";
 
 const kcse = {

@@ -28,16 +28,16 @@ const set1 = [
   {jpeg: Jpeg1, webp: Webp1},
   {jpeg: Jpeg3, webp: Webp3},
   {jpeg: Jpeg5, webp: Webp5},
-  {jpeg: Jpeg7, webp: Webp7},
   {jpeg: Jpeg9, webp: Webp9},
+  {jpeg: Jpeg7, webp: Webp7},
 ];
 
 const set2 = [
   {jpeg: Jpeg2, webp: Webp2},
   {jpeg: Jpeg4, webp: Webp4},
   {jpeg: Jpeg6, webp: Webp6},
-  {jpeg: Jpeg8, webp: Webp8},
   {jpeg: Jpeg10, webp: Webp10},
+  {jpeg: Jpeg8, webp: Webp8},
 ];
 
 const zoomOutProperties = {
