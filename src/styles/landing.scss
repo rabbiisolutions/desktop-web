@@ -64,6 +64,11 @@ $desktop: 800px;
     p {
         font-size: 1.5vw;
         font-weight: 300;
+
+        span {
+            font-weight: bold;
+            color: color(purple);
+        }
     }
 
     #dark-box {
