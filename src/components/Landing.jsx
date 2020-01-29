@@ -62,7 +62,7 @@ const Landing = () => {
           <h2>achieve your potential</h2>
           <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
           <div id={'dark-box'}>
-            <p>Sign up <span>(client only*)</span> to see our price list.</p>
+            <p>Sign up to see our price list <span>(client only*)</span>.</p>
             <ButtonLink value={texts.signUp} link={"https://forms.gle/3JZCSM2JJTPLTjP57"} className="services"/>
           </div>
         </div>
