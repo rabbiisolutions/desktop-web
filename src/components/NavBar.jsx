@@ -14,7 +14,7 @@ class NavBar extends React.Component {
       <nav id="nav-bar">
         <Logo className="logo" height={3} units={'rem'}/>
         <span className="nav">
-            <a className="nav-item" href="https://catalogue.rabbii.co.ke/">
+            <a className="nav-item" href="https://payment.rabbii.co.ke/">
                 <span className={'text'}>{texts.menuItems[0]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>

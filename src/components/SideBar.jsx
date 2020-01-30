@@ -12,12 +12,6 @@ class SideBar extends React.Component {
     };
   }
 
-  servicesToggle(e) {
-    if (!this.state.servicesOpen) {
-      document.getElementsByClassName('services')[0].classList.toggle('hidden');
-    }
-  };
-
   menuHandler(e) {
     const target = e.target;
     if (this.state.active)
@@ -28,7 +22,6 @@ class SideBar extends React.Component {
       this.setState( {servicesOpen: !this.state.servicesOpen});
     else {
       this.setState( {servicesOpen: false});
-      this.servicesToggle(e);
     }
     menuToggle(target);
   }
@@ -43,7 +36,7 @@ class SideBar extends React.Component {
           <div className="side-bar">
             <div className="menu-title">{texts.menuTitle}</div>
             <div className="menu-items">
-              <a className="menu-item" href={'https://catalogue.rabbii.co.ke'}>
+              <a className="menu-item" href={'https://payment.rabbii.co.ke'}>
                 {texts.menuItems[0]}
               </a>
               <a className="menu-item" href="https://tuition-jobs.rabbii.co.ke/">
