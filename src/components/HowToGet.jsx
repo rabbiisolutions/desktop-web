@@ -1,5 +1,5 @@
 import Icon from "./basic/Icon";
-import howToGetATutor from "../icons/get-a-tutor.svg"
+import howToGetATutor from "../assets/icons/get-a-tutor.svg"
 import texts from "../constants/texts";
 import React from "react";
 

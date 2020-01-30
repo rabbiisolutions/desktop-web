@@ -1,6 +1,6 @@
 import React from "react";
 import Icon from "../basic/Icon";
-import star from "../../icons/star-solid.svg"
+import star from "../../assets/icons/star-solid.svg"
 
 
 const Star = (props) => {

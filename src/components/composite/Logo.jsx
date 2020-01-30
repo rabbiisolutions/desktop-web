@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../icons/logo.svg";
+import logo from "../../assets/icons/logo.svg";
 import Icon from '../basic/Icon'
 
 const Logo = (props) => {
