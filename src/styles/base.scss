@@ -134,10 +134,20 @@ main {
 }
 
 .client-btn, .tutor-btn {
-    padding: .45rem 1.2rem;
-    margin: .5vw 2vw 1.25vw;
-    border-width: 2px;
-    font-size: 1em;
+    padding: .7rem 1.2rem;
+    margin: 3vw 4vw 1.25vw;
+    @include desktop {
+        margin: .5vw 2vw 1.25vw;
+    }
+    border-width: 1px;
+    font-size: .9em;
+}
+
+.tutor-btn {
+    margin: 3vw 4vw 1.25vw;
+    @include desktop {
+        margin: .5vw 2vw 1.25vw;
+    }
 }
 
 .client-btn:hover, .tutor-btn:hover {
@@ -150,7 +160,7 @@ main {
 }
 
 #how-teecha-works {
-    background-color: color(alabaster);
+    background-color: #EEEEEE;
     padding: 3vw 5vw 7vw;
 }
 
@@ -159,4 +169,16 @@ main {
     border-radius: 5px;
     margin: 0 auto;
     width: 90%;
+}
+
+.learn {
+    margin: 3vw 0 0 5vw;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #27A1DA;
+    display: block;
+}
+.learn:hover {
+    color: #A600C0;
 }

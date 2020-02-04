@@ -9,7 +9,7 @@ const SignUpModal = (props) => {
         <div id="sign-up-text">{props.signUpText}</div>
         <section>
           <div className="user-title">
-            Sign up as a Client/Parent to get a tutor/Teacher
+            clients/parents only
           </div>
           <div id="client-btns">
             <ButtonLink link="https://forms.gle/y7KTkMDtYCtAywDu6" className="client-btn" value="Get a Tutor"/>
@@ -17,7 +17,7 @@ const SignUpModal = (props) => {
         </section>
         <section>
           <div className="user-title">
-            Register to be a Tutor/Teacher in your specific category
+            teachers/tutors only
           </div>
           <div id="tutor-btns">
             <ButtonLink link="https://forms.gle/LerPUYib9EJ3yMxr7" className="tutor-btn" value="Non TSC Tutor"/>

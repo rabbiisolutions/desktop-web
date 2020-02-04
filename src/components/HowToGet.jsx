@@ -10,6 +10,7 @@ const HowToGet = () => {
         <div className={'how-icon'}>
           <Icon src={howToGetATutor} height={'100%'} width={'100%'} units={''}/>
         </div>
+        <a href={'https://payment.rabbii.co.ke'} className={'learn'}>Learn more about payment and pricing</a>
       </section>
   );
 };
