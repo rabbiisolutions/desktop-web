@@ -129,8 +129,14 @@ main {
     border-color: color(curiosBlue);
     border-style: solid;
     text-align: center;
-    background-color: color(white);
-    color: color(curiosBlue);
+    background-color: color(curiosBlue);
+    color: color(white);
+}
+
+.btn-link:hover {
+    border-color: #27A1DA;
+    background-color: #ffffff;
+    color: #27A1DA;
 }
 
 .client-btn, .tutor-btn {
