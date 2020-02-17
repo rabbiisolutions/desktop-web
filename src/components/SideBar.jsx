@@ -36,19 +36,19 @@ class SideBar extends React.Component {
           <div className="side-bar">
             <div className="menu-title">{texts.menuTitle}</div>
             <div className="menu-items">
-              <a className="menu-item" href={'https://payment.rabbii.co.ke'}>
+              <a className="menu-item" href={texts.menuLinks[0]}>
                 {texts.menuItems[0]}
               </a>
-              <a className="menu-item" href="https://tuition-jobs.rabbii.co.ke/">
+              <a className="menu-item" href={texts.menuLinks[1]}>
                 {texts.menuItems[1]}
               </a>
-              <a className="menu-item" href="https://about.rabbii.co.ke/">
+              <a className="menu-item" href={texts.menuLinks[2]}>
                 {texts.menuItems[2]}
               </a>
-              <a className="menu-item" href="https://trending.rabbii.co.ke/">
+              <a className="menu-item" href={texts.menuLinks[3]}>
                 {texts.menuItems[3]}
               </a>
-              <a className="menu-item" href="https://faqs.rabbii.co.ke/">
+              <a className="menu-item" href={texts.menuLinks[4]}>
                 {texts.menuItems[4]}
               </a>
             </div>
