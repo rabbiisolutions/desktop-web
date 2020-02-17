@@ -69,6 +69,11 @@ button:hover, .btn-link:hover, .social span svg:hover {
     transform: scale(1.1);
 }
 
+.btn-link:hover {
+    color: color(white);
+    transition: all .5s ease-in-out;
+}
+
 .hidden {
     display: none;
 }

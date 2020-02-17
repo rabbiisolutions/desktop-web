@@ -4,7 +4,7 @@ import Icon from '../basic/Icon'
 
 const Logo = (props) => {
   return (
-      <a href={'#landing-image'}>
+      <a href={'#start'}>
         <Icon src={logo} className={props.className} height={props.height} units={props.units}/>
       </a>
   );
