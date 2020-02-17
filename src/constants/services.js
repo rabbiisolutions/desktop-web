@@ -13,6 +13,8 @@ import hobbiesJpeg from "../assets/images/services/jCIMcOpFHig-5.jpg";
 import hobbiesWebp from "../assets/images/services/jCIMcOpFHig-5.webp";
 import gamesJpeg from "../assets/images/services/jCIMcOpFHig-6.png";
 import gamesWebp from "../assets/images/services/jCIMcOpFHig-6.webp";
+import proJpeg from "../assets/images/services/jCIMcOpFHig-7.jpg";
+import proWebp from "../assets/images/services/jCIMcOpFHig-7.webp";
 
 const kcse = {
   title: 'Pass KCPE/KCSE',
@@ -119,7 +121,7 @@ const specialNeeds = {
   link: "https://forms.gle/wWkfoAQbSgDzrtoY7"
 };
 const proAppSoftware = {
-  title: 'Professional Application Software', icon: '',
+  title: 'Professional Application Software',
   desc: [
     {key:'x15', value: 'You can get a trainer to help you master or learn how to use any professional' +
           ' application software relevant in our career or any other field you may be interested in.'},
@@ -129,7 +131,7 @@ const proAppSoftware = {
       [{key: 'g4', text: 'Programming languages'}, {key: 'g5', text: 'CAD/CAM'},
         {key: 'g6', text: 'QuickBooks'}, {key: 'g7', text: 'SAGE … etc.'}]
   ),
-  images: {jpeg: '', webp: ''},
+  images: {jpeg: proJpeg, webp: proWebp},
   link: "#"
 };
 
