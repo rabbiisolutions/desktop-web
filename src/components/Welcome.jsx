@@ -1,7 +1,15 @@
 import React from "react";
 import texts from "../constants/texts";
 import benefits from "../constants/benefits";
-import Benefit from "./composite/Benefit";
+
+const Benefit = (props) => {
+  return (
+      <div className={'benefit'}>
+        <h2 className={'title'}>{props.title}</h2>
+        <p className={'desc'}>{props.desc}</p>
+      </div>
+  )
+};
 
 const Welcome = () => {
   return (

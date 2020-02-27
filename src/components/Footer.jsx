@@ -14,12 +14,6 @@ const Footer = () => {
   return (
       <footer>
         <div id="lighter">
-          <div id="company-info" className={'col'}>
-            <div className="footer-title">{texts.links}</div>
-            <div className={'inner-div'}>
-              <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>Class Attendance</a>
-            </div>
-          </div>
           <div id="contacts" className={'col'}>
             <div className="footer-title">{texts.contacts}</div>
             <div id={'contact-list'}>
@@ -35,6 +29,12 @@ const Footer = () => {
                 <Icon src={mail} className="footer-icon" height={3} width={3} units={'rem'}/>
                 <span><a href={'mailto:' + texts.sema}>{texts.sema}</a></span>
               </span>
+            </div>
+          </div>
+          <div id="company-info" className={'col'}>
+            <div className="footer-title">{texts.links}</div>
+            <div className={'inner-div'}>
+              <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>Class Attendance</a>
             </div>
           </div>
           <div id="find-us" className={'col'}>
