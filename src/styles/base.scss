@@ -41,6 +41,12 @@ $monitor: 1192px;
     }
 }
 
+%buttons {
+    -webkit-border-radius: $webkitRadius;
+    border-radius: $borderRadius;
+    cursor: $pointer;
+    border-style: solid;
+}
 
 html {
     box-sizing: border-box;
@@ -116,8 +122,30 @@ main {
     }
 }
 
+button {
+    @extend %buttons;
+    border-color: #0071A5;
+    border-width: 1px;
+    @include desktop {
+        border-width: 2px;
+        font-weight: normal;
+        padding: .6em 1.5em;
+    }
+    padding: .4em 1.5em;
+    font-size: $font16;
+    margin: 8px 0;
+    &:focus {
+        outline: 0 !important;
+    }
+    &:hover {
+        background-color: color(white);
+        color: #0071A5;
+        transition: all .5s ease-in-out;
+    }
+}
+
 .bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 .dark {
@@ -125,17 +153,12 @@ main {
 }
 
 .btn-link {
-    -webkit-border-radius: $webkitRadius;
-    border-radius: $borderRadius;
-    cursor: $pointer;
+    @extend %buttons;
     text-decoration: none;
     font-size: 1.25vw;
     display: inline-block;
-    border-color: color(curiosBlue);
     border-style: solid;
     text-align: center;
-    background-color: color(curiosBlue);
-    color: color(white);
 }
 
 .btn-link:hover {
@@ -144,21 +167,22 @@ main {
     color: #27A1DA;
 }
 
-.client-btn, .tutor-btn {
+%sign-up {
     padding: .7rem 1.2rem;
-    margin: 3vw 4vw 1.25vw;
-    @include desktop {
-        margin: .5vw 2vw 1.25vw;
-    }
     border-width: 1px;
     font-size: .9em;
+    margin: 3vw 4vw 1.25vw;
+    @include desktop {
+        margin: .75vw 2vw 1.25vw;
+    }
+}
+
+.client-btn {
+    @extend %sign-up;
 }
 
 .tutor-btn {
-    margin: 3vw 4vw 1.25vw;
-    @include desktop {
-        margin: .5vw 2vw 1.25vw;
-    }
+    @extend %sign-up;
 }
 
 .client-btn:hover, .tutor-btn:hover {
