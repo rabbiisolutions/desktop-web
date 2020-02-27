@@ -73,11 +73,10 @@ $desktop: 800px;
         border: 1px solid color(mercury);
 
         .services {
-            //background-color: color(curiosBlue);
-            //color: color(white);
             background-color: #0071A5;
             color: color(white);
             border-color: #0071A5;
+            box-shadow: none;
 
             @include desktop {
                 padding: 1vw 3vw;
