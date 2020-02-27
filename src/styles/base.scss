@@ -71,12 +71,12 @@ a:hover {
     color: color(curiosBlue);
 }
 
-button:hover, .btn-link:hover, .social span svg:hover {
+button:hover, .social span svg:hover {
     transform: scale(1.1);
 }
 
 .btn-link:hover {
-    color: color(white);
+    //color: color(white);
     transition: all .5s ease-in-out;
 }
 
@@ -192,7 +192,10 @@ button {
 .services {
     padding: .5rem 1.5rem;
     font-size: 1.25rem;
-    box-shadow: 0 4px 4px rgba(27, 37, 49, 0.25);
+    &:hover {
+        box-shadow: 0 4px 4px rgba(27, 37, 49, 0.25);
+        text-decoration: none;
+    }
 }
 
 #how-teecha-works {
