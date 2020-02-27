@@ -8,7 +8,6 @@ import youtube from "../assets/icons/social/circle-youtube.svg"
 import facebook from "../assets/icons/social/circle-facebook.svg"
 import linkedin from "../assets/icons/social/circle-linkedin.svg"
 import texts from "../constants/texts";
-import Logo from "./composite/Logo";
 
 
 const Footer = () => {
@@ -16,14 +15,13 @@ const Footer = () => {
       <footer>
         <div id="lighter">
           <div id="company-info" className={'col'}>
-            <Logo className="logo" height={7.6875} units={'vw'}/>
-            <p>
-              Rabbii TS is an education technology company that wants to see education transform
-              the society by empowering them to achieve their goals and dreams.
-            </p>
+            <div className="footer-title">{texts.links}</div>
+            <div className={'inner-div'}>
+              <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>Class Attendance</a>
+            </div>
           </div>
           <div id="contacts" className={'col'}>
-            <div id="contacts-title">{texts.contacts}</div>
+            <div className="footer-title">{texts.contacts}</div>
             <div id={'contact-list'}>
               <span className="icon-text">
                 <Icon src={phone} className="footer-icon" height={3} width={3} units={'rem'}/>
@@ -40,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
           <div id="find-us" className={'col'}>
-            <div id="find-us-title">{texts.findUs}</div>
+            <div className="footer-title">{texts.findUs}</div>
             <div id="social">
               <a href="https://www.facebook.com/rabbiitech/" target="_blank" rel="noopener noreferrer">
                 <Icon src={facebook} className="footer-icon social" height={3} width={3} units={'rem'}/>

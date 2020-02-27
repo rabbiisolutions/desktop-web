@@ -68,7 +68,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: color(curiosBlue);
+    color: #0071A5;
 }
 
 button:hover, .social span svg:hover {
@@ -76,7 +76,6 @@ button:hover, .social span svg:hover {
 }
 
 .btn-link:hover {
-    //color: color(white);
     transition: all .5s ease-in-out;
 }
 

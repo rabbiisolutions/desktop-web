@@ -11,6 +11,7 @@ const gold = 'gold';
 const grey = 'grey';
 const signUp = 'Sign Up';
 const contacts = 'Talk to us';
+const links = 'Links';
 const findUs = 'Connect';
 const safaricom = '0798 884 419';
 const telkom = '0772 915 361';
@@ -36,7 +37,7 @@ const texts = {
   signUp: signUp, contacts: contacts, findUs: findUs,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
   menuItems: menuItems, ourServices: ourServices, hidden: hidden, gold: gold, welcome: welcome,
-  welcomeSell: welcomeSell, menuLinks: menuLinks
+  welcomeSell: welcomeSell, menuLinks: menuLinks, links: links
 };
 
 export default texts;
