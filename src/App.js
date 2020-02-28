@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import backDropHandler from "./events/BackDrop";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar.jsx";
@@ -11,10 +10,11 @@ import Services from "./components/Services";
 import HowToGet from "./components/HowToGet";
 import Reviews from "./components/Reviews";
 import texts from "./constants/texts";
+import { CookiesProvider } from 'react-cookie';
 
 function App() {
   return (
-      <Router>
+      <CookiesProvider>
         <NavBar/>
         <main>
           <Landing/>
@@ -27,7 +27,7 @@ function App() {
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
         <Footer/>
-      </Router>
+      </CookiesProvider>
   );
 }
 
