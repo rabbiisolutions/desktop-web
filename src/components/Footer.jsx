@@ -34,7 +34,8 @@ const Footer = () => {
           <div id="company-info" className={'col'}>
             <div className="footer-title">{texts.links}</div>
             <div className={'inner-div'}>
-              <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>Class Attendance</a>
+              <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>{texts.dot}Class Attendance</a>
+              <a href={'/CORONAVIRUS.pdf'}>{texts.dot}Corona Virus Demystified</a>
             </div>
           </div>
           <div id="find-us" className={'col'}>

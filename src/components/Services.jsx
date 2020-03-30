@@ -3,10 +3,13 @@ import services from "../constants/services";
 import ImageWebp from "../helpers/ImageWebp";
 import ButtonLink from "./basic/ButtonLink";
 
-const GetTutor = (props) => {
+const GetTutor = (links) => {
   return (
       <div className={'get-a-tutor'}>
-        <ButtonLink link={props.link} className="services" value="Get a Tutor"/>
+        { links.map((link) => (
+            <ButtonLink link={link.link} key={link.key} className="services"
+                        value={ link.value ? link.value : "Get a Tutor"}/>
+        ))}
       </div>
   )
 };
@@ -29,7 +32,7 @@ const Service = (props) => {
           <hr/>
           {Desc(props.desc)}
           {props.list}
-          <GetTutor link={props.link}/>
+          {GetTutor(props.links)}
         </div>
       </div>
   )
@@ -44,7 +47,7 @@ const Services = () => {
               <Service
                   jpeg={service.value.images.jpeg} webp={service.value.images.jpeg}
                   alt={'area-photo'} title={service.value.title}
-                  desc={service.value.desc} link={service.value.link}
+                  desc={service.value.desc} links={service.value.links}
                   list={service.value.examples} key={service.key}
               />
           ))}

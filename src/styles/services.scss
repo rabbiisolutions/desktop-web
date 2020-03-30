@@ -24,7 +24,7 @@ $monitor: 1192px;
     left: 2.25vw;
     top: 2.25vw;
     @include desktop {
-        margin-right: 6vw;
+        margin-right: 7vw;
         width: 60%;
     }
 }
@@ -52,7 +52,7 @@ $monitor: 1192px;
         }
     }
 
-    .service:nth-child(8) {
+    .service:nth-last-child(1) {
         @include desktop {
             margin-bottom: 0;
         }
@@ -99,6 +99,7 @@ $monitor: 1192px;
 
     .services {
         margin-top: 1.5vw;
+        margin-right: 2.5vw;
     }
 }
 

@@ -34,7 +34,7 @@ const clientReviews = [
       }, comment: 'I love how they have good relationship ' +
           'between the teachers and parents.They are well organized, determined in fulfilling their' +
           ' goals and vision. Working with them has been easy for me. (Teacher)'
-    }, images: {jpeg: saxJpeg, webp: saxWebp}
+    }, images: {jpeg: saxJpeg, webp: saxWebp}, key: "aa"
   },
 
   {

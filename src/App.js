@@ -9,7 +9,6 @@ import Welcome from "./components/Welcome";
 import Services from "./components/Services";
 import HowToGet from "./components/HowToGet";
 import Reviews from "./components/Reviews";
-import texts from "./constants/texts";
 import { CookiesProvider } from 'react-cookie';
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
           <Reviews/>
         </main>
         <SideBar/>
-        <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>
+        <SignUpModal/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
         <Footer/>
       </CookiesProvider>

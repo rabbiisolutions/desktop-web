@@ -15,7 +15,30 @@ import gamesJpeg from "../assets/images/services/jCIMcOpFHig-6.png";
 import gamesWebp from "../assets/images/services/jCIMcOpFHig-6.webp";
 import proJpeg from "../assets/images/services/jCIMcOpFHig-7.jpg";
 import proWebp from "../assets/images/services/jCIMcOpFHig-7.webp";
+import onlineJpeg from "../assets/images/services/jCIMcOpFHig-8.jpg";
+import onlineWebp from "../assets/images/services/jCIMcOpFHig-8.webp";
 
+const online = {
+  title: 'Online Classes',
+  desc: [{key: 'x17',
+    value: 'We have online classes through which your child has a video call with a tutor and has ' +
+        'access to the notes prepared by the tutor. We are also able to provide for revision ' +
+        'materials such as papers together with the marking schemes, plus notes to any topics. ' +
+        'We also conduct an online assessment class for you and guide all the way.'},
+    {key: 'x18', value: 'Sign up for our any classes:'}
+  ],
+  examples: ListItem(
+      [
+        {key: 'ha1', text: 'Primary school'}, {key: 'ha2', text: 'High school'},
+        {key: 'ha3', text: 'International Curricular'}, {key: 'ha4', text: 'And many more'},
+      ]
+  ),
+  images: {jpeg: onlineJpeg, webp: onlineWebp},
+  links: [
+    {key: 'k1', link: "https://forms.gle/3JZCSM2JJTPLTjP57", value: "Sign up"},
+    {key: 'k2', link: "#", value: "Login"}
+  ]
+};
 const kcse = {
   title: 'Pass KCPE/KCSE',
   desc: [{key: 'x1',
@@ -30,7 +53,7 @@ const kcse = {
       ]
   ),
   images: {jpeg: kcseJpeg, webp: kcseWebp},
-  link: "https://forms.gle/rd339azC1NoXo1YB6"
+  links: [{key: "k1", link: "https://forms.gle/rd339azC1NoXo1YB6"}]
 };
 const international = {
   title: 'Tutors for International School Systems',
@@ -44,7 +67,7 @@ const international = {
       [{key: 'c1', text: 'IGCSE'}, {key: 'c2', text: 'American'}, {key: 'c3', text: 'IB...etc'}]
   ),
   images: {jpeg: interJpeg, webp: interWebp},
-  link: "https://forms.gle/7fkAVe5DHNwomAJWA"
+  links: [{key: "i1", link: "https://forms.gle/7fkAVe5DHNwomAJWA"}]
 };
 const tests = {
   title: 'Pass Your Tests',
@@ -59,7 +82,7 @@ const tests = {
       {key: 'd4', text: 'ACT'}, {key: 'd5', text: 'Statistics...etc'}]
   ),
   images: {jpeg: testsJpeg, webp: testsWebp},
-  link: "https://forms.gle/edZLndJ9WuNb48u39"
+  links: [{key: "t1", link: "https://forms.gle/edZLndJ9WuNb48u39"}]
 };
 const sports = {
   title: 'Learn New Sports Games',
@@ -74,7 +97,7 @@ const sports = {
       {key: 'b3', text: 'Skating...etc'}]
   ),
   images: {jpeg: gamesJpeg, webp: gamesWebp},
-  link: "https://forms.gle/EZZya9AMuVcqC2eh8"
+  links: [{key: "ss1", link: "https://forms.gle/EZZya9AMuVcqC2eh8"}]
 };
 const language = {
   title: 'Speak a Foreign Language',
@@ -89,7 +112,7 @@ const language = {
       {key: 'a3', text: 'German etc'}]
   ),
   images: {jpeg: languageJpeg, webp: languageWebp},
-  link: "https://forms.gle/RFwpeWNTrf2kZTJ9A"
+  links: [{key: "l1", link: "https://forms.gle/RFwpeWNTrf2kZTJ9A"}]
 };
 const hobbies = {
   title: 'Developing your Hobbies and Interests',
@@ -104,7 +127,7 @@ const hobbies = {
       {key: 'e9', text: 'Dj...etc'}]
   ),
   images: {jpeg: hobbiesJpeg, webp: hobbiesWebp},
-  link: "https://forms.gle/EZZya9AMuVcqC2eh8"
+  links: [{key: "h1", link: "https://forms.gle/EZZya9AMuVcqC2eh8"}]
 };
 const specialNeeds = {
   title: 'Special Needs',
@@ -118,7 +141,7 @@ const specialNeeds = {
       {key: 'f6', text: 'Behavioural/Emotional'}, {key: 'f7', text: 'Sensory/Impaired...etc'}]
   ),
   images: {jpeg: specialJpeg, webp: specialWebp},
-  link: "https://forms.gle/wWkfoAQbSgDzrtoY7"
+  links: [{key: "sn1", link: "https://forms.gle/wWkfoAQbSgDzrtoY7"}]
 };
 const proAppSoftware = {
   title: 'Professional Application Software',
@@ -132,14 +155,15 @@ const proAppSoftware = {
         {key: 'g6', text: 'QuickBooks'}, {key: 'g7', text: 'SAGE … etc.'}]
   ),
   images: {jpeg: proJpeg, webp: proWebp},
-  link: "#"
+  links: [{key: "pas1", link: "https://forms.gle/ZoG8L7RDwbCDEpkV8"}]
 };
 
 const services = [
-  {key: 's1', value: kcse}, {key: 's2', value: international},
-  {key: 's3', value: tests}, {key: 's4', value: sports},
-  {key: 's5', value: language}, {key: 's6', value: hobbies},
-  {key: 's7', value: specialNeeds}, {key: 's8', value: proAppSoftware}
+  {key: 's1', value: online}, {key: 's2', value: kcse},
+  {key: 's3', value: international}, {key: 's4', value: tests},
+  {key: 's5', value: sports}, {key: 's6', value: language},
+  {key: 's7', value: hobbies}, {key: 's8', value: specialNeeds},
+  {key: 's9', value: proAppSoftware}
 ];
 
 export default services;

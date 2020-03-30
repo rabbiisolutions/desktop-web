@@ -184,10 +184,6 @@ button {
     @extend %sign-up;
 }
 
-.client-btn:hover, .tutor-btn:hover {
-    border-width: 2px;
-}
-
 .services {
     padding: .5rem 1.5rem;
     font-size: 1.25rem;
