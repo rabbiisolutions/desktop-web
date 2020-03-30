@@ -15,7 +15,7 @@ import gamesJpeg from "../assets/images/services/jCIMcOpFHig-6.png";
 import gamesWebp from "../assets/images/services/jCIMcOpFHig-6.webp";
 import proJpeg from "../assets/images/services/jCIMcOpFHig-7.jpg";
 import proWebp from "../assets/images/services/jCIMcOpFHig-7.webp";
-import onlineJpeg from "../assets/images/services/jCIMcOpFHig-8.jpg";
+import onlineJpeg from "../assets/images/services/jCIMcOpFHig-8.png";
 import onlineWebp from "../assets/images/services/jCIMcOpFHig-8.webp";
 
 const online = {
@@ -35,8 +35,7 @@ const online = {
   ),
   images: {jpeg: onlineJpeg, webp: onlineWebp},
   links: [
-    {key: 'k1', link: "https://forms.gle/3JZCSM2JJTPLTjP57", value: "Sign up"},
-    {key: 'k2', link: "#", value: "Login"}
+    {key: 'k1', link: "https://forms.gle/3JZCSM2JJTPLTjP57", value: "Sign up"}
   ]
 };
 const kcse = {
